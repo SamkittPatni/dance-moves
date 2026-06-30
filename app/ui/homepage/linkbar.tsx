@@ -1,6 +1,14 @@
 import Link from "next/link";
 
-export default function LinkBar({links}) {
+// Defining datatype of parameters
+type DropdownLink = { name: string; href: string };
+
+type DropdownProps = {
+  links: DropdownLink[];
+};
+
+export default function LinkBar({links}: DropdownProps) {
+    // For each item in list, return a link
     return (
         <>
             {links.map((link => {

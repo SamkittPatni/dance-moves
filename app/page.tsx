@@ -1,5 +1,6 @@
 import LinkBar from "./ui/homepage/linkbar";
 
+// Links for pages
 const ballroomlinks = [
   { name: 'Waltz', href: '/ballroom/waltz'},
   { name: 'Quickstep', href: '/ballroom/quickstep'},
@@ -20,17 +21,6 @@ export default function Home() {
   return (
     <div className="flex flex-1 w-full flex-col items-center justify-between md:py-32 md:px-16 py-16 px-4 bg-white sm:items-start">
       <h1 className="w-full text-center text-black text-2xl font-bold">Ballroom</h1>
-      {/* <div className="md:flex md:flex-row w-full">
-        {ballroomlinks.map((link => {
-          return (
-            <div key= {link.name} className="w-full rounded-full bg-black text-white py-2 items-center text-center my-2 md:mx-1">
-              <Link href={link.href} className="flex items-center justify-center w-full">
-                {link.name}            
-              </Link>
-            </div>
-          );
-        }))}
-      </div> */}
       <div className="md:flex md:flex-row w-full">
         <LinkBar links={ballroomlinks}/>
       </div>
@@ -38,15 +28,6 @@ export default function Home() {
       <h1 className="w-full text-center text-black text-2xl font-bold">Latin</h1>
       <div className="w-full">
         <LinkBar links={latinlinks}/>
-        {/* {latinlinks.map((link => {
-          return (
-            <div key= {link.name} className="w-full rounded-full bg-black text-white py-2 items-center text-center my-2">
-              <Link href={link.href} className="flex items-center justify-center w-full">
-                {link.name}            
-              </Link>
-            </div>
-          );
-        }))} */}
       </div>
     </div>
   );

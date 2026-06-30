@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Dropdown from "./dropdown";
 
-// name: 'Home', href: '/';
+// Links for pages
 const ballroomlinks = [
   { name: 'Waltz', href: '/ballroom/waltz'},
   { name: 'Quickstep', href: '/ballroom/quickstep'},
@@ -20,33 +21,11 @@ const latinlinks = [
 export default function SideNav() {
     return  (
         <>
-            <Link href='/'>
+            <Link href='/' className="hover:font-bold">
                 Home
             </Link>
-            <p>Ballroom</p>
-            <div className="pl-5">
-                {ballroomlinks.map((link => {
-                    return (
-                        <div key= {link.name}>
-                            <Link href={link.href}>
-                                {link.name}            
-                            </Link>
-                        </div>
-                    );
-                }))}
-            </div>
-            <p>Latin</p>
-            <div className="pl-5">
-                {latinlinks.map((link => {
-                    return (
-                        <div key= {link.name}>
-                            <Link href={link.href}>
-                                {link.name}            
-                            </Link>
-                        </div>
-                    );
-                }))}
-            </div>
+            <Dropdown title="Ballroom" links={ballroomlinks}/>
+            <Dropdown title="Latin" links={latinlinks}/>
         </>
     );
 }
