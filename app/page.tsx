@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+import LinkBar from "./ui/homepage/linkbar";
 
 const ballroomlinks = [
   { name: 'Waltz', href: '/ballroom/waltz'},
@@ -19,34 +18,36 @@ const latinlinks = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans">
-      <main className="flex flex-1 w-full max-w-5xl flex-col items-center justify-between md:py-32 md:px-16 py-16 px-4 bg-white sm:items-start">
-        <h1 className="w-full text-center text-black text-2xl font-bold">Ballroom</h1>
-        <div className="md:flex md:flex-row w-full">
-          {ballroomlinks.map((link => {
-            return (
-              <div key= {link.name} className="w-full rounded-full bg-black text-white py-2 items-center text-center my-2 md:mx-1">
-                <Link href={link.href} className="flex items-center justify-center w-full">
-                  {link.name}            
-                </Link>
-              </div>
-            );
-          }))}
-        </div>
-        <br />
-        <h1 className="w-full text-center text-black text-2xl font-bold">Latin</h1>
-        <div className="w-full">
-          {latinlinks.map((link => {
-            return (
-              <div key= {link.name} className="w-full rounded-full bg-black text-white py-2 items-center text-center my-2">
-                <Link href={link.href} className="flex items-center justify-center w-full">
-                  {link.name}            
-                </Link>
-              </div>
-            );
-          }))}
-        </div>
-      </main>
+    <div className="flex flex-1 w-full flex-col items-center justify-between md:py-32 md:px-16 py-16 px-4 bg-white sm:items-start">
+      <h1 className="w-full text-center text-black text-2xl font-bold">Ballroom</h1>
+      {/* <div className="md:flex md:flex-row w-full">
+        {ballroomlinks.map((link => {
+          return (
+            <div key= {link.name} className="w-full rounded-full bg-black text-white py-2 items-center text-center my-2 md:mx-1">
+              <Link href={link.href} className="flex items-center justify-center w-full">
+                {link.name}            
+              </Link>
+            </div>
+          );
+        }))}
+      </div> */}
+      <div className="md:flex md:flex-row w-full">
+        <LinkBar links={ballroomlinks}/>
+      </div>
+      <br />
+      <h1 className="w-full text-center text-black text-2xl font-bold">Latin</h1>
+      <div className="w-full">
+        <LinkBar links={latinlinks}/>
+        {/* {latinlinks.map((link => {
+          return (
+            <div key= {link.name} className="w-full rounded-full bg-black text-white py-2 items-center text-center my-2">
+              <Link href={link.href} className="flex items-center justify-center w-full">
+                {link.name}            
+              </Link>
+            </div>
+          );
+        }))} */}
+      </div>
     </div>
   );
 }
