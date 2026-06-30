@@ -20,12 +20,12 @@ const latinlinks = [
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white sm:items-start">
+      <main className="flex flex-1 w-full max-w-5xl flex-col items-center justify-between md:py-32 md:px-16 py-16 px-4 bg-white sm:items-start">
         <h1 className="w-full text-center text-black text-2xl font-bold">Ballroom</h1>
-        <div className="w-full">
+        <div className="md:flex md:flex-row w-full">
           {ballroomlinks.map((link => {
             return (
-              <div key= {link.name} className="w-full rounded-full bg-black text-white py-2 items-center text-center my-2">
+              <div key= {link.name} className="w-full rounded-full bg-black text-white py-2 items-center text-center my-2 md:mx-1">
                 <Link href={link.href} className="flex items-center justify-center w-full">
                   {link.name}            
                 </Link>
