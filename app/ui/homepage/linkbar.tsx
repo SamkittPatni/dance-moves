@@ -13,8 +13,8 @@ export default function LinkBar({links}: DropdownProps) {
         <>
             {links.map((link => {
                 return (
-                    <div key= {link.name} className="w-full rounded-full bg-black text-white py-2 items-center text-center my-2 md:mx-1">
-                        <Link href={link.href} className="flex items-center justify-center w-full">
+                    <div key= {link.name} className="w-full rounded-xl md:rounded-3xl bg-black text-white py-2 md:py-8 items-center text-center my-2 md:mx-1">
+                        <Link href={link.href} className="transition-all duration-150 ease-in-out flex items-center justify-center w-full hover:scale-110">
                             {link.name}            
                         </Link>
                     </div>

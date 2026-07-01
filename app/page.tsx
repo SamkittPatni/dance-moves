@@ -1,4 +1,5 @@
 import LinkBar from "./ui/homepage/linkbar";
+import Image from "next/image";
 
 // Links for pages
 const ballroomlinks = [
@@ -19,16 +20,40 @@ const latinlinks = [
 
 export default function Home() {
   return (
-    <div className="flex flex-1 w-full flex-col items-center justify-between md:py-32 md:px-16 py-16 px-4 bg-white sm:items-start">
-      <h1 className="w-full text-center text-black text-2xl font-bold">Ballroom</h1>
-      <div className="md:flex md:flex-row w-full">
-        <LinkBar links={ballroomlinks}/>
+    <div className="flex flex-1 w-full flex-col items-center justify-between md:py-32 md:px-16 py-16 px-4 text-xl md:font-bold">
+      <div className="fixed w-full top-0 left-0 z-10 bg-purple-200">
+        <button className="cursor-pointer pt-3 pl-3 md:hidden">
+          <Image src="/burger.svg" width={40} height={40} alt=""></Image>
+        </button>
       </div>
-      <br />
-      <h1 className="w-full text-center text-black text-2xl font-bold">Latin</h1>
-      <div className="w-full">
-        <LinkBar links={latinlinks}/>
+      <div className="md:w-full w-[80%] md:flex md:flex-row gap-2">
+        <div className="w-full">
+          <h1 className="w-full text-center text-black text-2xl font-bold md:pb-5">Ballroom</h1>
+          <div className="w-full">
+            <LinkBar links={ballroomlinks}/>
+          </div>
+        </div>
+        <br />
+        <div className="w-full">
+          <h1 className="w-full text-center text-black text-2xl font-bold md:pb-5">Latin</h1>
+          <div className="w-full">
+            <LinkBar links={latinlinks}/>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
+
+{/* <div className="md:w-full w-[80%]">
+        <h1 className="w-full text-center text-black text-2xl font-bold">Ballroom</h1>
+        <div className="md:flex md:flex-row w-full">
+          <LinkBar links={ballroomlinks}/>
+        </div>
+        <br />
+        <h1 className="w-full text-center text-black text-2xl font-bold">Latin</h1>
+        <div className="w-full">
+          <LinkBar links={latinlinks}/>
+        </div>
+      </div> */}

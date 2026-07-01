@@ -24,8 +24,8 @@ export default function SideNav() {
             <Link href='/' className="hover:font-bold">
                 Home
             </Link>
-            <Dropdown title="Ballroom" links={ballroomlinks}/>
-            <Dropdown title="Latin" links={latinlinks}/>
+            <Dropdown title="Ballroom" height={30} links={ballroomlinks}/>
+            <Dropdown title="Latin" height={30} links={latinlinks}/>
         </>
     );
 }

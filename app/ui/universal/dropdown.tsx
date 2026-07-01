@@ -7,10 +7,11 @@ type DropdownLink = { name: string; href: string };
 
 type DropdownProps = {
   title: string;
+  height: number;
   links: DropdownLink[];
 };
 
-export default function Dropdown({title, links}: DropdownProps) {
+export default function Dropdown({title, height, links}: DropdownProps) {
     // State to know if dropdown is open or closed
     const [isOpen, setIsOpen] = useState(false);
 
@@ -18,7 +19,7 @@ export default function Dropdown({title, links}: DropdownProps) {
         // On click, transition height of div to open and display links
         <div className="overflow-hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="hover:font-bold cursor-pointer"> {title} </button>
-            <div className={`transition-all duration-700 ${isOpen ? 'h-30' : 'h-0'}`} >
+            <div className={`transition-all duration-700 ${isOpen ? 'h-'+height : 'h-0'}`} >
                 {links.map((link => {
                     return (
                         <div key= {link.name} className="pl-5">
@@ -32,18 +33,3 @@ export default function Dropdown({title, links}: DropdownProps) {
         </div>
     );
 }
-
-// Previously working code-----------
-
-// style={{height: isOpen ? `${contentRef.current.scrollHeight}px`: '0'}}
-{/* <div ref={contentRef} className={`transition-height duration-500 ease-in-out ${isOpen ? 'h-auto' : 'h-0'}`} >
-        {links.map((link => {
-            return (
-                <div key= {link.name} className="pl-5">
-                    <Link href={link.href} className="hover:font-bold">
-                        {link.name}            
-                    </Link>
-                </div>
-            );
-        }))}
-    </div> */}
