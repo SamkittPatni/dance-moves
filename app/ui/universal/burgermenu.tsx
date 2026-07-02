@@ -1,4 +1,5 @@
 'use client'
+
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -27,10 +28,9 @@ export default function Burger() {
         // On click, transition height of div to open and display links
         <div className="fixed top-0 left-0 z-50 md:hidden pointer-events-auto">
             <button type="button" onClick={() => setIsOpen(!isOpen)} className="relative z-50 cursor-pointer pt-1 pl-1">
-                <Image src="/burger.svg" width={40} height={40} alt="">
-                </Image>
+                <Image src="/burger.svg" width={40} height={40} alt=""></Image>
             </button>
-            <div className={`overflow-hidden bg-gray-500 pl-1 w-30 transition-all duration-700 ${isOpen ? 'h-85' : 'h-0'}`} >
+            <div className={`overflow-hidden bg-gray-500 pl-1 w-30 mt-[-3] transition-all duration-700 ${isOpen ? 'h-85' : 'h-0'}`} >
                 <Link href='/' className="block hover:font-bold">
                     Home
                 </Link>
