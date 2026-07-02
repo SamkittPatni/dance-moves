@@ -56,7 +56,7 @@ export default function RootLayout({
           </div>
         </div>
         <Burger />
-        <div className="flex flex-row flex-1 items-center bg-zinc-300 font-sans">
+        <div className="flex flex-row flex-1 mt-12 bg-zinc-300 font-sans">
           <div className="flex flex-col w-[20%] pl-[5%] text-black md:block hidden">
             <SideNav/>
           </div>

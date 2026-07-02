@@ -1,8 +1,8 @@
-import BallroomLayout from "../layout.tsx";
+import Background from "../background.tsx"
 export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return <section><BallroomLayout />{children}</section>
+  return <Background>{children}</Background>
 }
