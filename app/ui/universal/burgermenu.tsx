@@ -30,7 +30,7 @@ export default function Burger() {
             <button type="button" onClick={() => setIsOpen(!isOpen)} className="relative z-50 cursor-pointer pt-1 pl-1">
                 <Image src="/burger.svg" width={40} height={40} alt=""></Image>
             </button>
-            <div className={`overflow-hidden bg-gray-500 pl-1 w-30 transition-all duration-700 ${isOpen ? 'h-85' : 'h-0'}`} >
+            <div className={`overflow-hidden bg-gray-500 pl-1 w-30 mt-[-3] transition-all duration-700 ${isOpen ? 'h-85' : 'h-0'}`} >
                 <Link href='/' className="block hover:font-bold">
                     Home
                 </Link>
