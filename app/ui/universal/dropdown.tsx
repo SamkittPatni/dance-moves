@@ -19,7 +19,7 @@ export default function Dropdown({title, height, links}: DropdownProps) {
         // On click, transition height of div to open and display links
         <div className="overflow-hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="hover:font-bold cursor-pointer"> {title} </button>
-            <div className={`transition-all duration-700 ${isOpen ? 'h-'+height : 'h-0'}`} >
+            <div className={`transition-all duration-700 ${isOpen ? 'h-30' : 'h-0'}`} >
                 {links.map((link => {
                     return (
                         <div key= {link.name} className="pl-5">

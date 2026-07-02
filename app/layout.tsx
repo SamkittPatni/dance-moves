@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SideNav from "./ui/universal/sidenav";
+import Image from "next/image";
+import Burger from "./ui/universal/burgermenu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +14,20 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const dancelinks = [
+  { name: 'Home', href: '/'},
+  { name: 'Waltz', href: '/ballroom/waltz'},
+  { name: 'Quickstep', href: '/ballroom/quickstep'},
+  { name: 'Foxtrot', href: '/ballroom/foxtrot'},
+  { name: 'Tango', href: '/ballroom/tango'},
+  { name: 'Viennese Waltz', href: '/ballroom/viennese'},
+  { name: 'Cha-Cha', href: '/latin/chacha'},
+  { name: 'Jive', href: '/latin/jive'},
+  { name: 'Samba', href: '/latin/samba'},
+  { name: 'Rumba', href: '/latin/rumba'},
+  { name: 'Paso Doble', href: '/latin/paso'},
+];
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,13 +40,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // Creating global NavBar
+    // Creating global NavBar and burger menus
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <div className="flex flex-row flex-1 items-center bg-zinc-50 font-sans">
+        <div className="flex flex-row fixed w-full top-0 left-0 h-12 z-10 items-center justify-center bg-purple-200">
+          {/* <button className="fixed cursor-pointer pt-1 pl-1 md:hidden">
+            <Image src="/burger.svg" width={40} height={40} alt="">
+            </Image>
+          </button> */}
+          <div className="pointer-events-none text-black">
+              Dance Moves
+          </div>
+        </div>
+        <Burger />
+        <div className="flex flex-row flex-1 items-center bg-zinc-300 font-sans">
           <div className="flex flex-col w-[20%] pl-[5%] text-black md:block hidden">
             <SideNav/>
           </div>
