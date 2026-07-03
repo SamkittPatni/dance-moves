@@ -1,3 +1,3 @@
 export default function Page() {
-  return <p>Tango Page</p>;
+  return <p>Step Page</p>;
 }
