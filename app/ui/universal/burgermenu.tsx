@@ -6,18 +6,18 @@ import { useState } from "react";
 
 const ballroomlinks = [
   { name: 'Waltz', href: '/ballroom/waltz'},
-  { name: 'Quickstep', href: '/ballroom/quickstep'},
-  { name: 'Foxtrot', href: '/ballroom/foxtrot'},
   { name: 'Tango', href: '/ballroom/tango'},
   { name: 'Viennese Waltz', href: '/ballroom/viennese'},
+  { name: 'Foxtrot', href: '/ballroom/foxtrot'},
+  { name: 'Quickstep', href: '/ballroom/quickstep'},
 ];
 
 const latinlinks = [
   { name: 'Cha-Cha', href: '/latin/chacha'},
-  { name: 'Jive', href: '/latin/jive'},
   { name: 'Samba', href: '/latin/samba'},
   { name: 'Rumba', href: '/latin/rumba'},
   { name: 'Paso Doble', href: '/latin/paso'},
+  { name: 'Jive', href: '/latin/jive'},
 ];
 
 export default function Burger() {
@@ -30,7 +30,7 @@ export default function Burger() {
             <button type="button" onClick={() => setIsOpen(!isOpen)} className="relative z-50 cursor-pointer pt-1 pl-1">
                 <Image src="/burger.svg" width={40} height={40} alt=""></Image>
             </button>
-            <div className={`overflow-hidden bg-gray-500 pl-1 w-30 mt-[-3] transition-all duration-700 ${isOpen ? 'h-85' : 'h-0'}`} >
+            <div className={`overflow-hidden bg-gray-500 pl-1 w-35 mt-[-3] transition-all duration-700 ${isOpen ? 'h-80' : 'h-0'}`} >
                 <Link href='/' className="block hover:font-bold">
                     Home
                 </Link>

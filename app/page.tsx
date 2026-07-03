@@ -5,18 +5,18 @@ import Burger from "./ui/universal/burgermenu";
 // Links for pages
 const ballroomlinks = [
   { name: 'Waltz', href: '/ballroom/waltz'},
-  { name: 'Quickstep', href: '/ballroom/quickstep'},
-  { name: 'Foxtrot', href: '/ballroom/foxtrot'},
   { name: 'Tango', href: '/ballroom/tango'},
   { name: 'Viennese Waltz', href: '/ballroom/viennese'},
+  { name: 'Foxtrot', href: '/ballroom/foxtrot'},
+  { name: 'Quickstep', href: '/ballroom/quickstep'},
 ];
 
 const latinlinks = [
   { name: 'Cha-Cha', href: '/latin/chacha'},
-  { name: 'Jive', href: '/latin/jive'},
   { name: 'Samba', href: '/latin/samba'},
   { name: 'Rumba', href: '/latin/rumba'},
   { name: 'Paso Doble', href: '/latin/paso'},
+  { name: 'Jive', href: '/latin/jive'},
 ];
 
 export default function Home() {
