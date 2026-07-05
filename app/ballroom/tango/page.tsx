@@ -1,7 +1,7 @@
 import LinkBar from "../../ui/homepage/linkbar"
 
 export default function Page() {
-  const steps = [
+  const steps: string[] = [
     { name: "Back Corte", href:"/ballroom/tango/back_corte" },
     { name: "Back Open Promenade", href:"/back_open_promenade" },
     { name: "Basic Reverse Turn", href: "/basic_reverse_turn" },
@@ -33,8 +33,8 @@ export default function Page() {
     { name: "Walk", href: "/ballroom/tango/walk" },
   ];
   return (
-    <div>
-        <LinkBar links={steps}/>
-    </div>
+  <>
+    <LinkBar links={steps}/>
+  </>
   );
 }
