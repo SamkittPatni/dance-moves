@@ -1,4 +1,5 @@
 import LinkBar from "../../ui/homepage/linkbar"
+import SearchBar from "../searchbar"
 
 export default function Page() {
   const steps: string[] = [
@@ -32,8 +33,10 @@ export default function Page() {
     { name: "The Chase", href: "ballroom/tango/the_chase" },
     { name: "Walk", href: "/ballroom/tango/walk" },
   ];
+
   return (
   <>
+    <SearchBar />
     <LinkBar links={steps}/>
   </>
   );
