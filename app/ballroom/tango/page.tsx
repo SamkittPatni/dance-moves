@@ -7,9 +7,9 @@ import { useState } from 'react'
 export default function TangoPage() {
   const [category, setCategory] = useState('all');
   const steps: string[] = [
-    { name: "Back Corte", href:"/ballroom/tango/back_corte" },
-    { name: "Back Open Promenade", href:"/back_open_promenade" },
-    { name: "Basic Reverse Turn", href: "/basic_reverse_turn" },
+    { name: "Back Corte", href:"/ballroom/tango/back_corte", category:"gold" },
+    { name: "Back Open Promenade", href:"/back_open_promenade", category:"silver" },
+    { name: "Basic Reverse Turn", href: "/basic_reverse_turn", category:"bronze" },
     { name: "Brush Tap", href: "/brush_tap" },
     { name: "Clased Promenade", href: "/closed_promenade" },
     { name: "Contra Check", href: "/contra_check" },
