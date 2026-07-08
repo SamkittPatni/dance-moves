@@ -1,7 +1,11 @@
+'use client'
 import LinkBar from "../../ui/homepage/linkbar"
 import SearchBar from "../searchbar"
+import Filter from "../filter"
+import { useState } from 'react'
 
-export default function Page() {
+export default function TangoPage() {
+  const [category, setCategory] = useState('all');
   const steps: string[] = [
     { name: "Back Corte", href:"/ballroom/tango/back_corte" },
     { name: "Back Open Promenade", href:"/back_open_promenade" },
@@ -34,10 +38,14 @@ export default function Page() {
     { name: "Walk", href: "/ballroom/tango/walk" },
   ];
 
+  const visibleSteps = category === 'all' ? steps : steps.filter((step) => step.category === category);
+
   return (
   <>
     <SearchBar />
-    <LinkBar links={steps}/>
+    <Filter category={category} onCategoryChange={setCategory} />
+    <p>{category}</p>
+    <LinkBar links={visibleSteps}/>
   </>
   );
 }
