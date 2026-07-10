@@ -1,4 +1,4 @@
-import Background from "../background.tsx"
+import Background from "../background"
 export default function DashboardLayout({
   children,
 }: {
