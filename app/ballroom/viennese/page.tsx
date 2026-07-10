@@ -1,3 +1,38 @@
-export default function Page() {
-  return <p>Viennese Page</p>;
+'use client'
+import LinkBar from "../../ui/homepage/linkbar"
+import SearchBar from "../searchbar"
+import Filter from "../filter"
+import { useState } from 'react'
+
+export default function ViennesePage() {
+
+  const [category, setCategory] = useState('all');
+  const [query, setQuery] = useState('');
+
+  const steps: any[] = [
+    { name: "Natural Turn", href: "/ballroom/viennese/natural_turn", category: "bronze" },
+    { name: "Reverse Turn", href: "/ballroom/viennese/reverse_turn", category: "bronze" },
+    { name: "Change Steps", href:"/ballroom/viennese/change_steps", category:"bronze" },
+    { name: "Reverse Fleckerl", href: "/ballroom/viennese/reverse_fleckerl", category: "silver" },
+    { name: "Natural Fleckerl", href: "/ballroom/viennese/natural_fleckerl", category:"gold" },
+    { name: "Contra Check", href: "/ballroom/viennese/contra_check", category:"gold" },
+  ];
+
+  let visibleSteps: any = []
+  
+  if (category === 'all') {
+    visibleSteps = steps.filter((step) => step.name.toLowerCase().includes(query.toLowerCase()))
+  }
+  else {
+    visibleSteps = steps.filter((step) => step.category === category && step.name.toLowerCase().includes(query.toLowerCase()))
+  }
+
+  return (
+  <>
+    <SearchBar query={ query } onChangeQuery={ setQuery }/>
+    <Filter category={ category } onCategoryChange={ setCategory } />
+    <LinkBar links={ visibleSteps }/>
+  </>
+  );
+
 }
