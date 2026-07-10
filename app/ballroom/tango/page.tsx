@@ -5,12 +5,15 @@ import Filter from "../filter"
 import { useState } from 'react'
 
 export default function TangoPage() {
+
   const [category, setCategory] = useState('all');
-  const steps: string[] = [
+  const [query, setQuery] = useState('');
+
+  const steps: any[] = [
     { name: "Back Corte", href:"/ballroom/tango/back_corte", category:"gold" },
     { name: "Back Open Promenade", href:"/back_open_promenade", category:"silver" },
     { name: "Basic Reverse Turn", href: "/basic_reverse_turn", category:"bronze" },
-    { name: "Brush Tap", href: "/brush_tap" },
+    { name: "Brush Tap", href: "/brush_tap", category:"gold" },
     { name: "Clased Promenade", href: "/closed_promenade" },
     { name: "Contra Check", href: "/contra_check" },
     { name: "Fallaway Fourstep", href: "/fallaway_fourstep" },
@@ -38,14 +41,20 @@ export default function TangoPage() {
     { name: "Walk", href: "/ballroom/tango/walk" },
   ];
 
-  const visibleSteps = category === 'all' ? steps : steps.filter((step) => step.category === category);
+  let visibleSteps: any = []
+
+  if (category === 'all') {
+    visibleSteps = steps.filter((step) => step.name.toLowerCase().includes(query.toLowerCase()))
+  }
+  else {
+    visibleSteps = steps.filter((step) => step.category === category && step.name.toLowerCase().includes(query.toLowerCase()))
+  }
 
   return (
   <>
-    <SearchBar />
-    <Filter category={category} onCategoryChange={setCategory} />
-    <p>{category}</p>
-    <LinkBar links={visibleSteps}/>
+    <SearchBar query={ query } onChangeQuery={ setQuery }/>
+    <Filter category={ category } onCategoryChange={ setCategory } />
+    <LinkBar links={ visibleSteps }/>
   </>
   );
 }

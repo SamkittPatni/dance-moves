@@ -1,6 +1,4 @@
-'use client'
-import { useState } from 'react'
-export default function Filter({ category, onCategoryChange }) {
+export default function Filter({ category, onCategoryChange }: { category: string; onCategoryChange: (category: string) => void;}) {
   return (
     <select name="category" value={category} onChange={(e) => onCategoryChange(e.target.value)} className="text-black">
       <option value="all">All</option>

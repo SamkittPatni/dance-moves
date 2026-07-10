@@ -1,22 +1,7 @@
-'use client';
-import { useState } from 'react';
-
-function Search() {
-  const [query, setQuery] = useState('');
-  function handleSearch(e) {
-    setQuery(e.target.value);
-  }
-  return (
-    <>
-    <input name="query" onChange={handleSearch}/>
-    </>
-  );
-}
-
-export default function SearchBar({search}) {
+export default function SearchBar({ query, onChangeQuery}: {query: string; onChangeQuery: (query:string) => void;}) {
     return (
       <>
-	<Search />
+	<input value={query} onChange={(e) => onChangeQuery(e.target.value)}/>
       </>
     );
 }
