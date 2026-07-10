@@ -21,7 +21,7 @@ export default function WaltzPage() {
     { name: "Outside Change", href: "/ballroom/waltz/outside_change", category: "bronze" },
     { name: "Reverse Corte", href: "/ballroom/waltz/reverse_corte", category: "bronze" },
     { name: "Back Whisk", href: "/ballroom/waltz/back_whisk", category: "bronze" },
-    { name: "Basic Weave", href: "/ballroom/waltz/basic_wave", category: "bronze" },
+    { name: "Basic Weave", href: "/ballroom/waltz/basic_weave", category: "bronze" },
     { name: "Double Reverse Spin", href: "/ballroom/waltz/double_reverse_spin", category: "bronze" },
     { name: "Reverse Pivot", href: "/ballroom/waltz/reverse_pivot", category: "bronze" },
     { name: "Back Lock", href: "/ballroom/waltz/back_lock", category:"bronze" },
