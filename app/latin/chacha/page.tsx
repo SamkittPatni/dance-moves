@@ -1,7 +1,7 @@
 'use client'
 import LinkBar from "../../ui/homepage/linkbar"
-import SearchBar from "../../ballroom/searchbar"
-import Filter from "../../ballroom/filter"
+import SearchBar from "../../ui/universal/searchbar"
+import Filter from "../../ui/universal/filter"
 import { useState } from 'react'
 
 export default function ChaChaPage() {
