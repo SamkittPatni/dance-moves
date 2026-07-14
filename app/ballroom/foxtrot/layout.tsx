@@ -1,7 +1,8 @@
+import Background from "../../ui/universal/background"
 export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return <section>{children}</section>
+  return <Background>{children}</Background>
 }

@@ -1,3 +1,15 @@
 export default function Page() {
-  return <p>Step Page</p>;
+  return (
+    <>
+      <div>
+	Step Name
+      </div>
+      <div>
+	Video
+      </div>
+      <div>
+	Preceding Step
+      </div>
+    </>
+  );
 }
