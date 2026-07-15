@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import SideNav from "./ui/universal/sidenav";
 import Image from "next/image";
-import Burger from "./ui/universal/burgermenu";
+import TopNav from "./ui/universal/topnav";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const playfair = Playfair_Display({
   subsets: ["latin"],
+  variable: '--font-playfair',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
   subsets: ["latin"],
+  variable: '--font-montserrat',
 });
 
 export const metadata: Metadata = {
@@ -29,23 +29,13 @@ export default function RootLayout({
     // Creating global NavBar and burger menus
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${playfair.variable} ${montserrat.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <div className="flex flex-row fixed w-full top-0 left-0 h-12 z-10 items-center justify-center bg-purple-200">
-          {/* <button className="fixed cursor-pointer pt-1 pl-1 md:hidden">
-            <Image src="/burger.svg" width={40} height={40} alt="">
-            </Image>
-          </button> */}
-          <div className="pointer-events-none text-black">
-              Dance Moves
-          </div>
-        </div>
-        <Burger />
-        <div className="flex flex-row flex-1 mt-12 bg-zinc-300 font-sans">
-          <div className="flex flex-col w-[20%] pl-[5%] text-black md:block hidden">
-            <SideNav/>
-          </div>
+      <body className="overscroll-none min-h-full flex flex-col bg-auto">
+        <header className="flex flex-row fixed w-full top-0 left-0 h-12 z-10 items-center justify-center bg-white text-black">
+	 <TopNav />
+        </header>
+        <div className="flex flex-row flex-1 mt-12 font-sans">
           {children}
         </div>
       </body>

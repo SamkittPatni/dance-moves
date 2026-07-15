@@ -1,4 +1,4 @@
-import Background from "../background"
+import Background from "../../ui/universal/background"
 export default function DashboardLayout({
   children,
 }: {

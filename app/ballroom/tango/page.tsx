@@ -1,7 +1,7 @@
 'use client'
 import LinkBar from "../../ui/homepage/linkbar"
-import SearchBar from "../searchbar"
-import Filter from "../filter"
+import SearchBar from "../../ui/universal/searchbar"
+import Filter from "../../ui/universal/filter"
 import { useState } from 'react'
 
 export default function TangoPage() {
@@ -52,8 +52,8 @@ export default function TangoPage() {
 
   return (
   <>
-    <SearchBar query={ query } onChangeQuery={ setQuery }/>
     <Filter category={ category } onCategoryChange={ setCategory } />
+    <SearchBar query={ query } onChangeQuery={ setQuery }/>
     <LinkBar links={ visibleSteps }/>
   </>
   );
