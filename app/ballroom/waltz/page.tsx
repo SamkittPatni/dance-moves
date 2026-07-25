@@ -46,7 +46,6 @@ export default function WaltzPage() {
     { name: "Fallaway Whisk", href: "/ballroom/waltz/fallaway_whisk", category:"gold" },
     { name: "Fallaway Natural Turn", href: "/ballroom/waltz/fallaway_natural_turn", category:"restricted" },
     { name: "Running Spin Turn", href: "/ballroom/waltz/running_spin_turn", category:"restricted" },
-    { name: "Outside Swivel", href: "/ballroom/waltz/outside_swivel", category:"open" },
     { name: "Oversway", href: "/ballroom/waltz/oversway", category:"open" },
     { name: "Same Foot Lunge", href: "/ballroom/waltz/same_foot_lunge", category:"open" },
     { name: "Throwaway Oversway", href: "/ballroom/waltz/throwaway_oversway", category:"open" },
