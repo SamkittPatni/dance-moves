@@ -1,6 +1,6 @@
 export default function Filter({ category, onCategoryChange }: { category: string; onCategoryChange: (category: string) => void;}) {
   return (
-    <select name="category" value={category} onChange={(e) => onCategoryChange(e.target.value)}>
+    <select className="text-black bg-white" name="category" value={category} onChange={(e) => onCategoryChange(e.target.value)}>
       <option value="all">All</option>
       <option value="restricted">Restricted</option>
       <option value="gold">Gold</option>
