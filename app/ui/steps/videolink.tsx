@@ -9,8 +9,10 @@ type VidedoProps = {
 
 export default function VideoLink({videoID, start, end}: VidedoProps) {
     const opts = {
+        height: '100%',
+        width: '100%',
         playerVars: {
-            controls: 0,
+            controls: 1,
             playsinline: 1,
             start: start,
             end: end,
@@ -37,6 +39,6 @@ export default function VideoLink({videoID, start, end}: VidedoProps) {
         });
     }
     return (
-        <YouTube videoId={videoID} onStateChange={e => handleStateChange(e)} onReady={e => handlePlayerReady(e)} opts={opts} />
+        <YouTube className="video-container aspect-video" videoId={videoID} onStateChange={e => handleStateChange(e)} onReady={e => handlePlayerReady(e)} opts={opts} />
     );
 }
