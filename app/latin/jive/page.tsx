@@ -10,42 +10,45 @@ export default function JivePage() {
   const [query, setQuery] = useState('');
 
   const steps: any[] = [
-    { name: "Basic in Place", href: "/latin/jive/basic_in_place", category: "bronze" },
-    { name: "Fallaway Rock", href: "/latin/jive/fallaway_rock", category: "bronze" },
-    { name: "Fallaway Throwaway", href: "/latin/jive/fallaway_throwaway", category: "bronze" },
-    { name: "Link", href: "/latin/jive/link", category: "bronze" },
-    { name: "Change of Places Right to Left", href:"/latin/jive/change_of_places_r_to_l", category:"bronze" },
-    { name: "Change of Places Left to Right", href: "/latin/jive/change_of_places_l_to_r", category: "bronze" },
-    { name: "Change of Hands Behind Back", href: "/latin/jive/change_of_hands_behind_back", category: "bronze" },
-    { name: "Hip Bump", href: "/latin/jive/hip_bump", category: "bronze" },
-    { name: "American Spin", href: "/latin/jive/american_spin", category: "bronze" },
-    { name: "Promenade Walks", href: "/latin/jive/promenade_walks", category: "bronze" },
-    { name: "Stop and Go", href: "/latin/jive/stop_and_go", category: "bronze" },
-    { name: "Mooch", href: "/latin/jive/mooch", category: "bronze" },
-    { name: "Whip", href: "/latin/jive/whip", category: "bronze" },
-    { name: "Whip Throwaway", href: "/latin/jive/whip_throwaway", category: "bronze" },
-    { name: "Reverse Whip", href: "/latin/jive/reverse_whip", category: "silver" },
-    { name: "Windmill", href: "/latin/jive/windmill", category: "silver" },
-    { name: "Spanish Arms", href: "/latin/jive/spanish_arms", category: "silver" },
-    { name: "Rolling off the Arm", href: "/latin/jive/rolling_off_the_arm", category: "silver" },
-    { name: "Simple Spin", href: "/latin/jive/simple_spin", category: "silver" },
-    { name: "Miami Special", href: "/latin/jive/miami_special", category: "silver" },
-    { name: "Change of Places Right to Left with Double Spin", href: "/latin/jive/change_of_places_r_to_l_double_spin", category: "silver" },
-    { name: "Double Cross Whip", href: "/latin/jive/double_cross_whip", category: "restricted" },
-    { name: "Curly Whip", href: "/latin/jive/curly_whip", category: "gold" },
-    { name: "Overturned Fallaway Throwaway", href: "/latin/jive/overturned_fallaway_throwaway", category: "gold" },
-    { name: "Shoulder Spin", href: "/latin/jive/shoulder_spin", category: "gold" },
-    { name: "Toe Heel Swivels", href: "/latin/jive/toe_heel_swivels", category: "gold" },
-    { name: "Chugging", href: "/latin/jive/chugging", category: "gold" },
-    { name: "Chicken Walks", href: "/latin/jive/chicken_walks", category: "gold" },
-    { name: "Catapult", href: "/latin/jive/catapult", category: "gold" },
-    { name: "Salking Walks, Flicks and Break", href: "/latin/jive/stalking_walks_flicks_and_break", category: "gold" },
+    { name: "Basic in Place", href: "/latin/jive/basic_in_place", category: "bronze", isRestricted: true },
+    { name: "Fallaway Rock", href: "/latin/jive/fallaway_rock", category: "bronze", isRestricted: true },
+    { name: "Fallaway Throwaway", href: "/latin/jive/fallaway_throwaway", category: "bronze", isRestricted: true },
+    { name: "Link", href: "/latin/jive/link", category: "bronze", isRestricted: true },
+    { name: "Change of Places Right to Left", href:"/latin/jive/change_of_places_r_to_l", category:"bronze", isRestricted: true },
+    { name: "Change of Places Left to Right", href: "/latin/jive/change_of_places_l_to_r", category: "bronze", isRestricted: true },
+    { name: "Change of Hands Behind Back", href: "/latin/jive/change_of_hands_behind_back", category: "bronze", isRestricted: true },
+    { name: "Hip Bump", href: "/latin/jive/hip_bump", category: "bronze", isRestricted: true },
+    { name: "American Spin", href: "/latin/jive/american_spin", category: "bronze", isRestricted: true },
+    { name: "Promenade Walks", href: "/latin/jive/promenade_walks", category: "bronze", isRestricted: true },
+    { name: "Stop and Go", href: "/latin/jive/stop_and_go", category: "bronze", isRestricted: true },
+    { name: "Mooch", href: "/latin/jive/mooch", category: "bronze", isRestricted: true },
+    { name: "Whip", href: "/latin/jive/whip", category: "bronze", isRestricted: true },
+    { name: "Whip Throwaway", href: "/latin/jive/whip_throwaway", category: "bronze", isRestricted: true },
+    { name: "Reverse Whip", href: "/latin/jive/reverse_whip", category: "silver", isRestricted: true },
+    { name: "Windmill", href: "/latin/jive/windmill", category: "silver", isRestricted: true },
+    { name: "Spanish Arms", href: "/latin/jive/spanish_arms", category: "silver", isRestricted: true },
+    { name: "Rolling off the Arm", href: "/latin/jive/rolling_off_the_arm", category: "silver", isRestricted: true },
+    { name: "Simple Spin", href: "/latin/jive/simple_spin", category: "silver", isRestricted: true },
+    { name: "Miami Special", href: "/latin/jive/miami_special", category: "silver", isRestricted: true },
+    { name: "Change of Places Right to Left with Double Spin", href: "/latin/jive/change_of_places_r_to_l_double_spin", category: "silver", isRestricted: true },
+    { name: "Double Cross Whip", href: "/latin/jive/double_cross_whip", category: "restricted", isRestricted: true },
+    { name: "Curly Whip", href: "/latin/jive/curly_whip", category: "gold", isRestricted: true },
+    { name: "Overturned Fallaway Throwaway", href: "/latin/jive/overturned_fallaway_throwaway", category: "gold", isRestricted: true },
+    { name: "Shoulder Spin", href: "/latin/jive/shoulder_spin", category: "gold", isRestricted: true },
+    { name: "Toe Heel Swivels", href: "/latin/jive/toe_heel_swivels", category: "gold", isRestricted: true },
+    { name: "Chugging", href: "/latin/jive/chugging", category: "gold", isRestricted: true },
+    { name: "Chicken Walks", href: "/latin/jive/chicken_walks", category: "gold", isRestricted: true },
+    { name: "Catapult", href: "/latin/jive/catapult", category: "gold", isRestricted: true },
+    { name: "Salking Walks, Flicks and Break", href: "/latin/jive/stalking_walks_flicks_and_break", category: "gold", isRestricted: true },
   ];
 
   let visibleSteps: any = []
   
   if (category === 'all') {
     visibleSteps = steps.filter((step) => step.name.toLowerCase().includes(query.toLowerCase()))
+  }
+  else if (category === 'restricted') {
+    visibleSteps = steps.filter((step) => step.isRestricted && step.name.toLowerCase().includes(query.toLowerCase()))
   }
   else {
     visibleSteps = steps.filter((step) => step.category === category && step.name.toLowerCase().includes(query.toLowerCase()))

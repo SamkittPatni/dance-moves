@@ -10,9 +10,9 @@ export default function ViennesePage() {
   const [query, setQuery] = useState('');
 
   const steps: any[] = [
-    { name: "Natural Turn", href: "/ballroom/viennese/natural_turn", category: "bronze" },
-    { name: "Reverse Turn", href: "/ballroom/viennese/reverse_turn", category: "bronze" },
-    { name: "Change Steps", href:"/ballroom/viennese/change_steps", category:"bronze" },
+    { name: "Natural Turn", href: "/ballroom/viennese/natural_turn", category: "bronze", isRestricted: true },
+    { name: "Reverse Turn", href: "/ballroom/viennese/reverse_turn", category: "bronze", isRestricted: true },
+    { name: "Change Steps", href:"/ballroom/viennese/change_steps", category:"bronze", isRestricted: true },
     { name: "Reverse Fleckerl", href: "/ballroom/viennese/reverse_fleckerl", category: "silver" },
     { name: "Natural Fleckerl", href: "/ballroom/viennese/natural_fleckerl", category:"gold" },
     { name: "Contra Check", href: "/ballroom/viennese/contra_check", category:"gold" },
@@ -22,6 +22,9 @@ export default function ViennesePage() {
   
   if (category === 'all') {
     visibleSteps = steps.filter((step) => step.name.toLowerCase().includes(query.toLowerCase()))
+  }
+  else if (category === 'restricted') {
+    visibleSteps = steps.filter((step) => step.isRestricted && step.name.toLowerCase().includes(query.toLowerCase()))
   }
   else {
     visibleSteps = steps.filter((step) => step.category === category && step.name.toLowerCase().includes(query.toLowerCase()))
