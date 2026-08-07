@@ -3,8 +3,8 @@ import YouTube, { YouTubeEvent } from 'react-youtube'
 
 type VidedoProps = {
     videoID: string;
-    start: number;
-    end: number;
+    start?: number;
+    end?: number;
 }
 
 export default function VideoLink({videoID, start, end}: VidedoProps) {
@@ -15,7 +15,7 @@ export default function VideoLink({videoID, start, end}: VidedoProps) {
             controls: 1,
             playsinline: 1,
             start: start,
-            end: end,
+            ...(end !== undefined && { end: end, }),
             rel: 0,
             fs: 1,
         }
@@ -35,7 +35,7 @@ export default function VideoLink({videoID, start, end}: VidedoProps) {
         event.target.cueVideoById({
             videoId: videoID,
             startSeconds: start,
-            endSeconds: end,
+            ...(end !== undefined && { endSeconds: end, }),
         });
     }
     return (
