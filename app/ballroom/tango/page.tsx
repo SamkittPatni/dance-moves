@@ -10,14 +10,14 @@ export default function TangoPage() {
   const [query, setQuery] = useState('');
 
   const steps: any[] = [
-    { name: "Walk", href: "/ballroom/tango/walk", category: "bronze", isRestricted: true },
-    { name: "Progressive Side Step", href: "/ballroom/tango/progressive_side_step", category: "bronze", isRestricted: true },
-    { name: "Progressive Link", href: "/ballroom/tango/progressive_link", category: "bronze", isRestricted: true },
-    { name: "Closed Promenade", href: "/ballroom/tango/closed_promenade", category: "bronze", isRestricted: true },
-    { name: "Rock Turn", href: "/ballroom/tango/rock_turn", category: "bronze", isRestricted: true },
-    { name: "Open Reverse Turn, Follower Outside", href: "/ballroom/tango/open_reverse_turn_outside", category: "bronze", isRestricted: true },
-    { name: "Back Corte", href:"/ballroom/tango/back_corte", category:"bronze", isRestricted: true },
-    { name: "Open and Closed Finish", href: "/ballroom/tango/open_and_closed_finish", category: "bronze", isRestricted: true },
+    { name: "Walk", href: "/ballroom/tango/walk", category: "prebronze", isRestricted: true },
+    { name: "Progressive Side Step", href: "/ballroom/tango/progressive_side_step", category: "prebronze", isRestricted: true },
+    { name: "Progressive Link", href: "/ballroom/tango/progressive_link", category: "prebronze", isRestricted: true },
+    { name: "Closed Promenade", href: "/ballroom/tango/closed_promenade", category: "prebronze", isRestricted: true },
+    { name: "Rock Turn", href: "/ballroom/tango/rock_turn", category: "prebronze", isRestricted: true },
+    { name: "Open Reverse Turn, Follower Outside", href: "/ballroom/tango/open_reverse_turn_outside", category: "prebronze", isRestricted: true },
+    { name: "Back Corte", href:"/ballroom/tango/back_corte", category:"prebronze", isRestricted: true },
+    { name: "Open and Closed Finish", href: "/ballroom/tango/open_and_closed_finish", category: "prebronze", isRestricted: true },
     { name: "Open Reverse Turn, Follower In Line", href: "/ballroom/tango/open_reverse_turn_inside", category: "bronze", isRestricted: true },
     { name: "Progressive Side Step Reverse Turn", href: "/ballroom/tango/progressive_side_step_reverse_turn", category: "bronze", isRestricted: true },
     { name: "Open Promenade", href: "/ballroom/tango/open_promenade", category: "bronze", isRestricted: true },

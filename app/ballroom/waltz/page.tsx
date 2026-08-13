@@ -10,12 +10,12 @@ export default function WaltzPage() {
   const [query, setQuery] = useState('');
 
   const steps: any[] = [
-    { name: "Closed Changes", href: "/ballroom/waltz/closed_changes", category: "bronze", isRestricted: true },
-    { name: "Natural Turn", href: "/ballroom/waltz/natural_turn", category: "bronze", isRestricted: true },
-    { name: "Reverse Turn", href: "/ballroom/waltz/reverse_turn", category: "bronze", isRestricted: true },
-    { name: "Natural Spin Turn", href: "/ballroom/waltz/natural_spin_turn", category: "bronze", isRestricted: true },
-    { name: "Whisk", href: "/ballroom/waltz/whisk", category: "bronze", isRestricted: true },
-    { name: "Chasse from Promenade Position", href: "/ballroom/waltz/chasse_pp", category: "bronze", isRestricted: true },
+    { name: "Closed Changes", href: "/ballroom/waltz/closed_changes", category: "prebronze", isRestricted: true },
+    { name: "Natural Turn", href: "/ballroom/waltz/natural_turn", category: "prebronze", isRestricted: true },
+    { name: "Reverse Turn", href: "/ballroom/waltz/reverse_turn", category: "prebronze", isRestricted: true },
+    { name: "Natural Spin Turn", href: "/ballroom/waltz/natural_spin_turn", category: "prebronze", isRestricted: true },
+    { name: "Whisk", href: "/ballroom/waltz/whisk", category: "prebronze", isRestricted: true },
+    { name: "Chasse from Promenade Position", href: "/ballroom/waltz/chasse_pp", category: "prebronze", isRestricted: true },
     { name: "Closed Impetus", href:"/ballroom/waltz/closed_impetus", category:"bronze", isRestricted: true },
     { name: "Hesitation Change", href: "/ballroom/waltz/hesitation_change", category: "bronze", isRestricted: true },
     { name: "Outside Change", href: "/ballroom/waltz/outside_change", category: "bronze", isRestricted: true },

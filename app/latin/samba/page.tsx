@@ -10,13 +10,13 @@ export default function SambaPage() {
   const [query, setQuery] = useState('');
 
   const steps: any[] = [
-    { name: "Basic Movements (Natural, Reverse, Side, Progressive)", href: "/latin/samba/basic_movements", category: "bronze", isRestricted: true },
-    { name: "Whisks", href: "/latin/samba/whisks", category: "bronze", isRestricted: true },
-    { name: "Samba Walks", href: "/latin/samba/samba_walks", category: "bronze", isRestricted: true },
-    { name: "Rhythm Bounce", href: "/latin/samba/rythm_bounce", category: "bronze", isRestricted: true },
-    { name: "Volta Movements", href: "/latin/samba/volta_movements", category: "bronze", isRestricted: true },
-    { name: "Travelling Bota Fogos Forward and Backward", href: "/latin/samba/travelling_bota_fogos_forward_backward", category: "bronze", isRestricted: true },
-    { name: "Criss Cross Bota Fogos (Shadow Bota Fogos)", href: "/latin/samba/criss_cross_bota_fogos", category: "bronze" },
+    { name: "Basic Movements (Natural, Reverse, Side, Progressive)", href: "/latin/samba/basic_movements", category: "prebronze", isRestricted: true },
+    { name: "Whisks", href: "/latin/samba/whisks", category: "prebronze", isRestricted: true },
+    { name: "Samba Walks", href: "/latin/samba/samba_walks", category: "prebronze", isRestricted: true },
+    { name: "Rhythm Bounce", href: "/latin/samba/rythm_bounce", category: "prebronze", isRestricted: true },
+    { name: "Volta Movements", href: "/latin/samba/volta_movements", category: "prebronze", isRestricted: true },
+    { name: "Travelling Bota Fogos Forward and Backward", href: "/latin/samba/travelling_bota_fogos_forward_backward", category: "prebronze", isRestricted: true },
+    { name: "Criss Cross Bota Fogos (Shadow Bota Fogos)", href: "/latin/samba/criss_cross_bota_fogos", category: "prebronze" },
     { name: "Bota Fogos to Promenade and Counter Promenade", href: "/latin/samba/bota_fogos_to_promenade_and_counter_promenade", category: "bronze", isRestricted: true },
     { name: "Criss Cross Voltas", href: "/latin/samba/criss_cross_voltas", category: "bronze", isRestricted: true },
     { name: "Solo Spot Volta", href: "/latin/samba/solo_spot_volta", category: "bronze", isRestricted: true },

@@ -10,11 +10,11 @@ export default function FoxtrotPage() {
   const [query, setQuery] = useState('');
 
   const steps: any[] = [
-    { name: "Feather Step", href: "/ballroom/foxtrot/feather_step", category: "bronze", isRestricted: true },
-    { name: "Three Step", href: "/ballroom/foxtrot/three_step", category: "bronze", isRestricted: true },
-    { name: "Natural Turn", href: "/ballroom/foxtrot/natural_turn", category: "bronze", isRestricted: true },
-    { name: "Reverse Turn", href: "/ballroom/foxtrot/reverse_turn", category: "bronze", isRestricted: true },
-    { name: "Closed Impetus and Feather Finish", href:"/ballroom/foxtrot/closed_impetus_feather_finish", category:"bronze", isRestricted: true },
+    { name: "Feather Step", href: "/ballroom/foxtrot/feather_step", category: "prebronze", isRestricted: true },
+    { name: "Three Step", href: "/ballroom/foxtrot/three_step", category: "prebronze", isRestricted: true },
+    { name: "Natural Turn", href: "/ballroom/foxtrot/natural_turn", category: "prebronze", isRestricted: true },
+    { name: "Reverse Turn", href: "/ballroom/foxtrot/reverse_turn", category: "prebronze", isRestricted: true },
+    { name: "Closed Impetus and Feather Finish", href:"/ballroom/foxtrot/closed_impetus_feather_finish", category:"prebronze", isRestricted: true },
     { name: "Natural Weave", href: "/ballroom/foxtrot/natural_weave", category: "bronze", isRestricted: true },
     { name: "Change of Direction", href: "/ballroom/foxtrot/change_of_direction", category: "bronze", isRestricted: true },
     { name: "Basic Weave", href: "/ballroom/foxtrot/basic_wave", category: "bronze", isRestricted: true },

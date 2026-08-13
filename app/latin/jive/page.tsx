@@ -10,14 +10,14 @@ export default function JivePage() {
   const [query, setQuery] = useState('');
 
   const steps: any[] = [
-    { name: "Basic in Place", href: "/latin/jive/basic_in_place", category: "bronze", isRestricted: true },
-    { name: "Fallaway Rock", href: "/latin/jive/fallaway_rock", category: "bronze", isRestricted: true },
-    { name: "Fallaway Throwaway", href: "/latin/jive/fallaway_throwaway", category: "bronze", isRestricted: true },
-    { name: "Link", href: "/latin/jive/link", category: "bronze", isRestricted: true },
-    { name: "Change of Places Right to Left", href:"/latin/jive/change_of_places_r_to_l", category:"bronze", isRestricted: true },
-    { name: "Change of Places Left to Right", href: "/latin/jive/change_of_places_l_to_r", category: "bronze", isRestricted: true },
-    { name: "Change of Hands Behind Back", href: "/latin/jive/change_of_hands_behind_back", category: "bronze", isRestricted: true },
-    { name: "Hip Bump", href: "/latin/jive/hip_bump", category: "bronze", isRestricted: true },
+    { name: "Basic in Place", href: "/latin/jive/basic_in_place", category: "prebronze", isRestricted: true },
+    { name: "Fallaway Rock", href: "/latin/jive/fallaway_rock", category: "prebronze", isRestricted: true },
+    { name: "Fallaway Throwaway", href: "/latin/jive/fallaway_throwaway", category: "prebronze", isRestricted: true },
+    { name: "Link", href: "/latin/jive/link", category: "prebronze", isRestricted: true },
+    { name: "Change of Places Right to Left", href:"/latin/jive/change_of_places_r_to_l", category:"prebronze", isRestricted: true },
+    { name: "Change of Places Left to Right", href: "/latin/jive/change_of_places_l_to_r", category: "prebronze", isRestricted: true },
+    { name: "Change of Hands Behind Back", href: "/latin/jive/change_of_hands_behind_back", category: "prebronze", isRestricted: true },
+    { name: "Hip Bump", href: "/latin/jive/hip_bump", category: "prebronze", isRestricted: true },
     { name: "American Spin", href: "/latin/jive/american_spin", category: "bronze", isRestricted: true },
     { name: "Promenade Walks", href: "/latin/jive/promenade_walks", category: "bronze", isRestricted: true },
     { name: "Stop and Go", href: "/latin/jive/stop_and_go", category: "bronze", isRestricted: true },
