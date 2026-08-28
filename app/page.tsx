@@ -21,7 +21,7 @@ const latinlinks = [
 
 export default function Home() {
   return (
-    <div className="flex w-full items-center justify-between lg:mx-40 md:py-32 md:px-16 py-16 px-1 text-xl md:font-bold">
+    <div className="flex w-full md:h-[90vh] items-center justify-between lg:mx-40 md:py-32 md:px-16 py-16 px-1 text-xl md:font-bold">
       <div className="md:w-full w-full md:flex md:flex-row gap-10 mx-5">
         <div className="w-full">
           <h1 className="font-serif w-full text-center text-2xl font-bold md:pb-5">Ballroom</h1>
