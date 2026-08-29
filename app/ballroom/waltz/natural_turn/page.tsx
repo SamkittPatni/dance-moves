@@ -75,7 +75,7 @@ export default function Page() {
 // Preceding Figures:-
 // Back Lock
 // Basic Weave
-// Chasse From Promenade Position
+// Chasse from Promenade
 // Closed Change LF
 // Closed Telemark
 // Cross Hesitation
@@ -86,7 +86,7 @@ export default function Page() {
 // Progressive Chasse To R
 // Reverse Corte
 // Turning Lock
-// Weave From Promenade Position
+// Weave from Promenade
 
 // Following Figures:-
 // Closed Change RF

@@ -36,7 +36,7 @@ export default function PasoPage() {
     { name: "Spanish Lines", href: "/latin/paso/spanish_lines", category: "silver", isRestricted: true },
     { name: "Flamenco Taps", href: "/latin/paso/flamenco_taps", category: "silver", isRestricted: true },
     { name: "Syncopated Separation", href: "/latin/paso/syncopated_separation", category: "gold", isRestricted: true },
-    { name: "Travelling Spins from Promenade Position", href: "/latin/paso/travelling_spins_from_pp", category: "gold", isRestricted: true },
+    { name: "Travelling Spins from Promenade", href: "/latin/paso/travelling_spins_from_pp", category: "gold", isRestricted: true },
     { name: "Travelling Spins from Counter Promenade Position", href: "/latin/paso/travelling_spins_from_cpp", category: "gold", isRestricted: true },
     { name: "Fregolina (also Farol)", href: "/latin/paso/fregolina", category: "gold", isRestricted: true },
     { name: "Twists", href: "/latin/paso/twists", category: "gold", isRestricted: true },

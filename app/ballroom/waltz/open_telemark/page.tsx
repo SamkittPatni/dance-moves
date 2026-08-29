@@ -4,8 +4,10 @@ import { Suspense } from "react";
 
 export default function Page() {
   const precedingFigures = [
+    { name: "Closed Change RF", href: "closed_changes" },
     { name: "Closed Wing", href: "closed_wing" },
     { name: "Double Reverse Spin", href: "double_reverse_spin" },
+    { name: "Fallaway Reverse And Slip Pivot", href: "fallaway_reverse_slip_pivot" },
     { name: "Hesitation Change", href: "hesitation_change" },
     { name: "Reverse Pivot", href: "reverse_pivot" },
     { name: "Reverse Turn", href: "reverse_turn" },
@@ -13,19 +15,17 @@ export default function Page() {
   ];
 
   const followingFigures = [
-    { name: "Reverse Turn", href: "reverse_turn" },
-    { name: "Whisk", href: "whisk" },
-    { name: "Double Reverse Spin", href: "double_reverse_spin" },
-    { name: "Progressive Chasse To R", href: "progressive_chasse_R" },
-    { name: "Closed Telemark", href: "closed_telemark" },
-    { name: "Open Telemark", href: "open_telemark" },
-    { name: "Contra Check", href: "contra_check" },
+    { name: "Chasse from Promenade", href: "chasse_pp" },
+    { name: "Weave from Promenade", href: "weave_pp" },
+    { name: "Cross Hesitation", href: "cross_hesitation" },
+    { name: "Wing", href: "wing" },
+    { name: "Left Whisk", href: "left_whisk" },
   ];
 
   return (
     <>
       <div className="flex flex-col w-full h-full bg-black/75 text-justify md:px-10">
-        <h1 className="font-serif font-bold text-center">Fallaway Reverse and Slip Pivot</h1>
+        <h1 className="font-serif font-bold text-center">Open Telemark</h1>
         <hr className="mx-3 pb-5 border-gray-600" />
         <div className="px-3">
           {/* Closed Changes (also simply called a waltz basic) can start from both LF and RF.         */}
@@ -34,7 +34,7 @@ export default function Page() {
           <h2 className="font-bold text-2xl text-center pb-2">Video</h2>
           <hr className="mx-3 pb-5 border-gray-600" />
           <Suspense fallback={<p>Loading video...</p>}>
-            <VideoLink videoID="pQaK0t57fL4" start={472} end={490} />
+            <VideoLink videoID="5hkQJIaWv9k" start={37} end={91} />
           </Suspense>
         </div>
         <div className="flex md:flex-row flex-col py-5">
@@ -54,19 +54,19 @@ export default function Page() {
   );
 }
 
-// Preceding Figures
+// Preceding Figures for Open Telemark
+// Closed Change RF
 // Closed Wing
 // Double Reverse Spin
+// Fallaway Reverse And Slip Pivot
 // Hesitation Change
 // Reverse Pivot
 // Reverse Turn
 // Wing
 
-// Following Figures
-// Reverse Turn
-// Whisk
-// Double Reverse Spin
-// Progressive Chasse To R
-// Closed Telemark
-// Open Telemark
-// Contra Check
+// Following Figures for Open Telemark
+// Chasse from Promenade
+// Weave from Promenade
+// Cross Hesitation
+// Wing
+// Left Whisk
