@@ -55,8 +55,10 @@ export default function PasoPage() {
 
   return (
   <>
-    <SearchBar query={ query } onChangeQuery={ setQuery }/>
-    <Filter category={ category } onCategoryChange={ setCategory } />
+    <div className= "flex flex-row w-full h-full gap-4 py-2">
+      <SearchBar query={ query } onChangeQuery={ setQuery }/>
+      <Filter category={ category } onCategoryChange={ setCategory } />
+    </div>
     <LinkBar links={ visibleSteps }/>
   </>
   );

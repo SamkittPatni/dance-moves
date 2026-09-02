@@ -32,8 +32,8 @@ export default function RootLayout({
       className={`${playfair.variable} ${montserrat.variable} h-full antialiased`}
     >
       <body className="overscroll-none min-h-full flex flex-col bg-auto">
-        <header className="flex flex-row fixed w-full top-0 left-0 h-12 z-10 items-center justify-center bg-white text-black">
-	 <TopNav />
+        <header className="flex flex-row fixed w-full top-0 left-0 h-18 z-10 backdrop-blur-xs items-center justify-center bg-neutral-950/95 text-white text-lg">
+	        <TopNav />
         </header>
         <div className="flex flex-row flex-1 mt-12 font-sans">
           {children}
