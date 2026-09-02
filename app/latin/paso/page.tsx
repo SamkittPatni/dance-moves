@@ -10,6 +10,7 @@ export default function PasoPage() {
   const [query, setQuery] = useState('');
 
   const steps: any[] = [
+    { name: "Appel", href: "/latin/paso/appel", category: "prebronze", isRestricted: true },
     { name: "Sur Place", href: "/latin/paso/sur_place", category: "prebronze", isRestricted: true },
     { name: "Basic Movement", href: "/latin/paso/basic_movement", category: "prebronze", isRestricted: true },
     { name: "Chasses to Right or Left", href: "/latin/paso/chasses_r_l", category: "prebronze", isRestricted: true },
@@ -18,8 +19,6 @@ export default function PasoPage() {
     { name: "Promenade Link (also Promenade Close)", href: "/latin/paso/promenade_link", category: "prebronze", isRestricted: true },
     { name: "Promenade", href: "/latin/paso/promenade", category: "prebronze", isRestricted: true },
     { name: "Ecart", href: "/latin/paso/ecart", category: "prebronze", isRestricted: true },
-    { name: "Fallaway Whisk", href: "/latin/paso/fallaway_whisk", category: "prebronze", isRestricted: true },
-    { name: "Appel", href: "/latin/paso/appel", category: "restricted", isRestricted: true },
     { name: "Separation", href: "/latin/paso/separation", category: "prebronze", isRestricted: true },
     { name: "Fallaway Ending to Separation", href: "/latin/paso/fallaway_ending_to_separation", category: "bronze", isRestricted: true },
     { name: "Huit", href: "/latin/paso/huit", category: "bronze", isRestricted: true },
@@ -33,8 +32,7 @@ export default function PasoPage() {
     { name: "Fallaway Reverse Turn", href: "/latin/paso/fallaway_reverse_turn", category: "silver", isRestricted: true },
     { name: "Coup de Pique", href: "/latin/paso/coup_de_pique", category: "silver", isRestricted: true },
     { name: "Left Foot Variation", href: "/latin/paso/lf_variation", category: "silver", isRestricted: true },
-    { name: "Spanish Lines", href: "/latin/paso/spanish_lines", category: "silver", isRestricted: true },
-    { name: "Flamenco Taps", href: "/latin/paso/flamenco_taps", category: "silver", isRestricted: true },
+    { name: "Spanish Lines and Flamenco Taps", href: "/latin/paso/spanish_lines_and_flamenco_taps", category: "silver", isRestricted: true },
     { name: "Syncopated Separation", href: "/latin/paso/syncopated_separation", category: "gold", isRestricted: true },
     { name: "Travelling Spins from Promenade", href: "/latin/paso/travelling_spins_from_pp", category: "gold", isRestricted: true },
     { name: "Travelling Spins from Counter Promenade Position", href: "/latin/paso/travelling_spins_from_cpp", category: "gold", isRestricted: true },
