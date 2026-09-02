@@ -37,7 +37,9 @@ export default function RumbaPage() {
     { name: "Fencing", href: "/latin/rumba/fencing", category: "gold", isRestricted: true },
     { name: "Three Threes", href: "/latin/rumba/three_threes", category: "gold", isRestricted: true },
     { name: "Three Alemanas", href: "/latin/rumba/three_alemanas", category: "gold", isRestricted: true },
-    { name: "Hip Twists (Advanced, Continuous, Circular)", href: "/latin/rumba/hip_twists", category: "gold", isRestricted: true },
+    { name: "Advanced Hip Twist", href: "/latin/rumba/advanced_hip_twist", category: "gold", isRestricted: true },
+    { name: "Continuous Hip Twist", href: "/latin/rumba/continuous_hip_twist", category: "gold", isRestricted: true },
+    { name: "Circular Hip Twist", href: "/latin/rumba/circular_hip_twist", category: "gold", isRestricted: true },
   ];
 
   let visibleSteps: any = []
