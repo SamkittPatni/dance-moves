@@ -40,7 +40,7 @@ export default function TopNav() {
       <>
         <div className="flex items-center">
           <ChevronDoubleLeftIcon className="absolute w-6 h-6 md:hidden left-5" onClick={() => router.back()}>&lt;</ChevronDoubleLeftIcon>
-          <Link href="/">Home</Link>
+          <Link className="transition-all duration-150 ease-in-out hover:scale-110" href="/">Home</Link>
         </div>
       </>
     )

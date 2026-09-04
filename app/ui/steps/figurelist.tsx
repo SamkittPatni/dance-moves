@@ -11,7 +11,7 @@ export default function FigureList({ steps }: FigureListProps) {
             <ul>
                 {steps.map((step) => (
                     <li key={step.name}>
-                        <Link href={step.href}>{step.name}</Link>
+                        <Link className="hover:underline text-decoration-skip-ink max-md:underline" href={step.href}>{step.name}</Link>
                     </li>
                 ))}
             </ul>
