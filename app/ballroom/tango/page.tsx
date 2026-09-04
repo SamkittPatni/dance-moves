@@ -55,7 +55,8 @@ export default function TangoPage() {
 
   return (
   <>
-    <div className= "flex flex-row w-full h-full gap-4 py-2">
+    <div className="font-serif font-bold text-center md:text-8xl text-6xl mb-4 text-neutral-300">Tango</div>
+    <div className= "flex flex-row w-full h-full gap-4 py-2 pb-8">
       <SearchBar query={ query } onChangeQuery={ setQuery }/>
       <Filter category={ category } onCategoryChange={ setCategory } />
     </div>

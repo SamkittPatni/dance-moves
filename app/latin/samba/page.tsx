@@ -10,7 +10,7 @@ export default function SambaPage() {
   const [query, setQuery] = useState('');
 
   const steps: any[] = [
-    { name: "Basic Movements (Natural, Reverse, Side, Progressive)", href: "/latin/samba/basic_movements", category: "prebronze", isRestricted: true },
+    { name: "Basic Movements", href: "/latin/samba/basic_movements", category: "prebronze", isRestricted: true },
     { name: "Whisks", href: "/latin/samba/whisks", category: "prebronze", isRestricted: true },
     { name: "Samba Walks", href: "/latin/samba/samba_walks", category: "prebronze", isRestricted: true },
     { name: "Rhythm Bounce", href: "/latin/samba/rythm_bounce", category: "prebronze", isRestricted: true },
@@ -58,7 +58,8 @@ export default function SambaPage() {
 
   return (
   <>
-    <div className= "flex flex-row w-full h-full gap-4 py-2">
+    <div className="font-serif font-bold text-center md:text-8xl text-6xl mb-4 text-neutral-300">Samba</div>
+    <div className= "flex flex-row w-full h-full gap-4 py-2 pb-8">
       <SearchBar query={ query } onChangeQuery={ setQuery }/>
       <Filter category={ category } onCategoryChange={ setCategory } />
     </div>

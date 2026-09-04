@@ -14,8 +14,8 @@ export default function JivePage() {
     { name: "Fallaway Rock", href: "/latin/jive/fallaway_rock", category: "prebronze", isRestricted: true },
     { name: "Fallaway Throwaway", href: "/latin/jive/fallaway_throwaway", category: "prebronze", isRestricted: true },
     { name: "Link", href: "/latin/jive/link", category: "prebronze", isRestricted: true },
-    { name: "Change of Places Right to Left", href:"/latin/jive/change_of_places_r_to_l", category:"prebronze", isRestricted: true },
-    { name: "Change of Places Left to Right", href: "/latin/jive/change_of_places_l_to_r", category: "prebronze", isRestricted: true },
+    { name: "Change of Places R to L", href:"/latin/jive/change_of_places_r_to_l", category:"prebronze", isRestricted: true },
+    { name: "Change of Places L to R", href: "/latin/jive/change_of_places_l_to_r", category: "prebronze", isRestricted: true },
     { name: "Change of Hands Behind Back", href: "/latin/jive/change_of_hands_behind_back", category: "prebronze", isRestricted: true },
     { name: "Hip Bump", href: "/latin/jive/hip_bump", category: "prebronze", isRestricted: true },
     { name: "American Spin", href: "/latin/jive/american_spin", category: "bronze", isRestricted: true },
@@ -30,7 +30,7 @@ export default function JivePage() {
     { name: "Rolling off the Arm", href: "/latin/jive/rolling_off_the_arm", category: "silver", isRestricted: true },
     { name: "Simple Spin", href: "/latin/jive/simple_spin", category: "silver", isRestricted: true },
     { name: "Miami Special", href: "/latin/jive/miami_special", category: "silver", isRestricted: true },
-    { name: "Change of Places Right to Left with Double Spin", href: "/latin/jive/change_of_places_r_to_l_double_spin", category: "silver", isRestricted: true },
+    { name: "Change of Places R to L with Double Spin", href: "/latin/jive/change_of_places_r_to_l_double_spin", category: "silver", isRestricted: true },
     { name: "Double Cross Whip", href: "/latin/jive/double_cross_whip", category: "restricted", isRestricted: true },
     { name: "Curly Whip", href: "/latin/jive/curly_whip", category: "gold", isRestricted: true },
     { name: "Overturned Fallaway Throwaway", href: "/latin/jive/overturned_fallaway_throwaway", category: "gold", isRestricted: true },
@@ -56,7 +56,8 @@ export default function JivePage() {
 
   return (
   <>
-    <div className= "flex flex-row w-full h-full gap-4 py-2">
+    <div className="font-serif font-bold text-center md:text-8xl text-6xl mb-4 text-neutral-300">Jive</div>
+    <div className= "flex flex-row w-full h-full gap-4 py-2 pb-8">
       <SearchBar query={ query } onChangeQuery={ setQuery }/>
       <Filter category={ category } onCategoryChange={ setCategory } />
     </div>

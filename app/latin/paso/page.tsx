@@ -13,7 +13,7 @@ export default function PasoPage() {
     { name: "Appel", href: "/latin/paso/appel", category: "prebronze", isRestricted: true },
     { name: "Sur Place", href: "/latin/paso/sur_place", category: "prebronze", isRestricted: true },
     { name: "Basic Movement", href: "/latin/paso/basic_movement", category: "prebronze", isRestricted: true },
-    { name: "Chasses to Right or Left", href: "/latin/paso/chasses_r_l", category: "prebronze", isRestricted: true },
+    { name: "Chasses to R or L", href: "/latin/paso/chasses_r_l", category: "prebronze", isRestricted: true },
     { name: "Drag", href: "/latin/paso/drag", category: "prebronze", isRestricted: true },
     { name: "Deplacement (Attack)", href: "/latin/paso/deplacement", category: "prebronze", isRestricted: true },
     { name: "Promenade Link (also Promenade Close)", href: "/latin/paso/promenade_link", category: "prebronze", isRestricted: true },
@@ -34,8 +34,8 @@ export default function PasoPage() {
     { name: "Left Foot Variation", href: "/latin/paso/lf_variation", category: "silver", isRestricted: true },
     { name: "Spanish Lines and Flamenco Taps", href: "/latin/paso/spanish_lines_and_flamenco_taps", category: "silver", isRestricted: true },
     { name: "Syncopated Separation", href: "/latin/paso/syncopated_separation", category: "gold", isRestricted: true },
-    { name: "Travelling Spins from Promenade", href: "/latin/paso/travelling_spins_from_pp", category: "gold", isRestricted: true },
-    { name: "Travelling Spins from Counter Promenade Position", href: "/latin/paso/travelling_spins_from_cpp", category: "gold", isRestricted: true },
+    { name: "Travelling Spins from PP", href: "/latin/paso/travelling_spins_from_pp", category: "gold", isRestricted: true },
+    { name: "Travelling Spins from CPP", href: "/latin/paso/travelling_spins_from_cpp", category: "gold", isRestricted: true },
     { name: "Fregolina (also Farol)", href: "/latin/paso/fregolina", category: "gold", isRestricted: true },
     { name: "Twists", href: "/latin/paso/twists", category: "gold", isRestricted: true },
     { name: "Chasse Cape (including Outside Turn)", href: "/latin/paso/chasse_cape", category: "gold", isRestricted: true },
@@ -55,7 +55,8 @@ export default function PasoPage() {
 
   return (
   <>
-    <div className= "flex flex-row w-full h-full gap-4 py-2">
+    <div className="font-serif font-bold text-center md:text-8xl text-6xl mb-4 text-neutral-300">Paso Doble</div>
+    <div className= "flex flex-row w-full h-full gap-4 py-2 pb-8">
       <SearchBar query={ query } onChangeQuery={ setQuery }/>
       <Filter category={ category } onCategoryChange={ setCategory } />
     </div>
