@@ -1,7 +1,9 @@
 'use client';
 import Link from 'next/link'
+import { useRouter, usePathname } from "next/navigation";
 import Dropdown from './dropdown'
 import { useState } from 'react';
+import {ChevronDoubleLeftIcon} from "@heroicons/react/24/outline";
 
 const ballroomlinks = [
   { name: 'Waltz', href: '/ballroom/waltz'},
@@ -22,44 +24,25 @@ const latinlinks = [
 
 export default function TopNav() {
   const [isOpen, setIsOpen] = useState(false);
-  return (
-    <>
-      {/* <div className="fixed top-0 left-0">
-        <div className={`py-5 px-10 flex flex-row w-screen overflow-hidden bg-neutral-950/95 transition-all duration-700 ${isOpen ? 'h-50' : 'h-11'}`} >
-          <div className="pr-20">
-            <Link href='/' className="block hover:font-bold">
-              Home
-            </Link>
-          </div>
-          <div className="pr-20">
-            <button onClick={() => setIsOpen(!isOpen)} className="hover:font-bold cursor-pointer"> Ballroom </button>
-            {ballroomlinks.map((link => {
-                return (
-                    <div key= {link.name}>
-                        <Link href={link.href} className="text-sm hover:font-bold">
-                            {link.name}            
-                        </Link>
-                    </div>
-                );
-            }))}
-          </div>
-          <div>
-            <button onClick={() => setIsOpen(!isOpen)} className="hover:font-bold cursor-pointer"> Latin </button>
-            {latinlinks.map((link => {
-                return (
-                    <div key= {link.name}>
-                        <Link href={link.href} className="text-sm hover:font-bold">
-                            {link.name}            
-                        </Link>
-                    </div>
-                );
-            }))}
-          </div>
+  const router = useRouter();
+  const pathname = usePathname();
+  if (pathname === '/') {
+    return (
+      <>
+        <div className="flex items-center">
+          <Link href="/">Home</Link>
         </div>
-      </div> */}
-      <div>
-	<Link href="/">Home</Link>
-      </div>
-    </>
-  )
+      </>
+    )
+  }
+  else {
+    return (
+      <>
+        <div className="flex items-center">
+          <ChevronDoubleLeftIcon className="absolute w-6 h-6 md:hidden left-5" onClick={() => router.back()}>&lt;</ChevronDoubleLeftIcon>
+          <Link href="/">Home</Link>
+        </div>
+      </>
+    )
+  }
 }
