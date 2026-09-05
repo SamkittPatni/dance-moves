@@ -26,7 +26,7 @@ export default function Page() {
   return (
     <>
       <div className="flex flex-col w-full h-full bg-black/75 text-justify md:px-10">
-        <h1 className="font-serif font-bold text-center">Change of Direction</h1>
+        <h1 className="font-serif font-bold text-center">Hover Feather</h1>
         <hr className="mx-3 pb-5 border-gray-600" />
         <div className="px-3">
           {/* Closed Changes (also simply called a waltz basic) can start from both LF and RF.         */}
