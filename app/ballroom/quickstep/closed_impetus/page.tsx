@@ -4,29 +4,26 @@ import { Suspense } from "react";
 
 export default function Page() {
   const precedingFigures = [
-    { name: "Hover Telemark", href: "hover_telemark" },
+    { name: "Back Lock", href: "backwards_lock" },
     { name: "Natural Turn", href: "natural_turn" },
-    { name: "Reverse Wave", href: "reverse_wave" },
+    { name: "Natural Turn And Back Lock", href: "natural_turn_back_lock" },
+    { name: "Progressive Chasse To Right", href: "progressive_chasse_r" },
   ];
 
   const followingFigures = [
-    { name: "Three Step", href: "three_step" },
-    { name: "Reverse Turn", href: "reverse_turn" },
-    { name: "Change Of Direction", href: "change_of_direction" },
-    { name: "Closed Telemark", href: "closed_telemark" },
-    { name: "Open Telemark and Feather Ending", href: "open_telemark_feather_ending" },
-    { name: "Open Telemark, Natural Turn, Outside Swivel and Feather Ending", href: "open_telemark_natural_turn_outside_swivel_feather_ending" },
-    { name: "Hover Telemark", href: "hover_telemark" },
-    { name: "Reverse Wave", href: "reverse_wave" },
-    { name: "Top Spin", href: "top_spin" },
-    { name: "Fallaway Reverse and Slip Pivot", href: "fallaway_reverse_slip_pivot" },
-    { name: "Bounce Fallaway with Weave Ending", href: "bounce_fallaway_weave_ending" },
+    { name: "Reverse Pivot", href: "reverse_pivot" },
+    { name: "Progressive Chasse", href: "progressive_chasse" },
+    { name: "Heel Pivot", href: "heel_pivot" },
+    { name: "Four Quick Run", href: "four_quick_run" },
+    { name: "V6", href: "v6" },
+    { name: "Six Quick Run", href: "six_quick_run" },
+    { name: "Hover Corte", href: "hover_corte" },
   ];
 
   return (
     <>
       <div className="flex flex-col w-full h-full bg-black/75 text-justify md:px-10">
-        <h1 className="font-serif font-bold text-center">Hover Feather</h1>
+        <h1 className="font-serif font-bold text-center">Closed Impetus</h1>
         <hr className="mx-3 pb-5 border-gray-600" />
         <div className="px-3">
           {/* Closed Changes (also simply called a waltz basic) can start from both LF and RF.         */}
@@ -35,7 +32,7 @@ export default function Page() {
           <h2 className="font-bold text-2xl text-center pb-2">Video</h2>
           <hr className="mx-3 pb-5 border-gray-600" />
           <Suspense fallback={<p>Loading video...</p>}>
-            <VideoLink videoID="mjGifHdBSAs" start={0} end={-1} />
+            <VideoLink videoID="n7yBERq8ZDw" start={20} end={55} />
           </Suspense>
         </div>
         <div className="flex md:flex-row flex-col py-5">
@@ -56,20 +53,16 @@ export default function Page() {
 }
 
 // Preceding Figures
-// Hover Telemark
+// Back Lock
 // Natural Turn
-// Reverse Wave
+// Natural Turn And Back Lock
+// Progressive Chasse To Right
 
 // Following Figures
-// Three Step
-// Reverse Turn
-// Change Of Direction
-// Closed Telemark
-// Open Telemark and Feather Ending
-// Open Telemark, Natural Turn, Outside Swivel and Feather Ending
-// Hover Telemark
-// Reverse Wave
-// Top Spin
-// Outside Swivel
-// Fallaway Reverse and Slip Pivot
-// Bounce Fallaway with Weave Ending
+// Reverse Pivot
+// Progressive Chasse
+// Heel Pivot
+// Four Quick Run
+// V6
+// Six Quick Run
+// Hover Corte

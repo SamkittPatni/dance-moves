@@ -4,29 +4,42 @@ import { Suspense } from "react";
 
 export default function Page() {
   const precedingFigures = [
-    { name: "Hover Telemark", href: "hover_telemark" },
+    { name: "Closed Telemark", href: "closed_telemark" },
+    { name: "Cross Chasse", href: "running_cross_chasse" },
+    { name: "Fish Tail", href: "fishtail" },
+    { name: "Forward Lock", href: "forward_lock" },
+    { name: "Four Quick Run", href: "four_quick_run" },
+    { name: "Heel Pivot", href: "heel_pivot" },
+    { name: "Natural Pivot Turn", href: "natural_pivot_turn" },
     { name: "Natural Turn", href: "natural_turn" },
-    { name: "Reverse Wave", href: "reverse_wave" },
+    { name: "Progressive Chasse", href: "progressive_chasse" },
+    { name: "Running Finish", href: "running_finish" },
+    { name: "Running Right Turn", href: "running_right_turn" },
+    { name: "Six Quick Run", href: "six_quick_run" },
+    { name: "Tipple Chasse To Right", href: "tipple_chasse" },
+    { name: "V6", href: "v6" },
+    { name: "Zig-Zag, Back Lock And Running Finish", href: "zig_zag_back_lock_running_finish" },
   ];
 
   const followingFigures = [
-    { name: "Three Step", href: "three_step" },
-    { name: "Reverse Turn", href: "reverse_turn" },
-    { name: "Change Of Direction", href: "change_of_direction" },
-    { name: "Closed Telemark", href: "closed_telemark" },
-    { name: "Open Telemark and Feather Ending", href: "open_telemark_feather_ending" },
-    { name: "Open Telemark, Natural Turn, Outside Swivel and Feather Ending", href: "open_telemark_natural_turn_outside_swivel_feather_ending" },
-    { name: "Hover Telemark", href: "hover_telemark" },
-    { name: "Reverse Wave", href: "reverse_wave" },
-    { name: "Top Spin", href: "top_spin" },
-    { name: "Fallaway Reverse and Slip Pivot", href: "fallaway_reverse_slip_pivot" },
-    { name: "Bounce Fallaway with Weave Ending", href: "bounce_fallaway_weave_ending" },
+    { name: "Closed Impetus", href: "closed_impetus" },
+    { name: "Tipple Chasse To Right", href: "tipple_chasse" },
+    { name: "Natural Turn And Back Lock", href: "natural_turn_back_lock" },
+    { name: "Natural Pivot Turn", href: "natural_pivot_turn" },
+    { name: "Natural Spin Turn", href: "natural_spin_turn" },
+    { name: "Natural Turn With Hesitation", href: "natural_turn_hesitation" },
+    { name: "Natural Turn", href: "natural_turn" },
+    { name: "Cross Chasse", href: "running_cross_chasse" },
+    { name: "Forward Lock", href: "forward_lock" },
+    { name: "Zig-Zag, Back Lock And Running Finish", href: "zig_zag_back_lock_running_finish" },
+    { name: "Tipsy To R", href: "tipsy_r_l" },
+    { name: "Rumba Cross", href: "rumba_cross" },
   ];
 
   return (
     <>
       <div className="flex flex-col w-full h-full bg-black/75 text-justify md:px-10">
-        <h1 className="font-serif font-bold text-center">Hover Feather</h1>
+        <h1 className="font-serif font-bold text-center">Natural Turn</h1>
         <hr className="mx-3 pb-5 border-gray-600" />
         <div className="px-3">
           {/* Closed Changes (also simply called a waltz basic) can start from both LF and RF.         */}
@@ -35,7 +48,7 @@ export default function Page() {
           <h2 className="font-bold text-2xl text-center pb-2">Video</h2>
           <hr className="mx-3 pb-5 border-gray-600" />
           <Suspense fallback={<p>Loading video...</p>}>
-            <VideoLink videoID="mjGifHdBSAs" start={0} end={-1} />
+            <VideoLink videoID="kp_4rGp9-t" start={320} end={353} />
           </Suspense>
         </div>
         <div className="flex md:flex-row flex-col py-5">
@@ -54,3 +67,34 @@ export default function Page() {
     </>
   );
 }
+
+// Preceding Figures
+// Closed Telemark
+// Cross Chasse
+// Fish Tail
+// Forward Lock
+// Four Quick Run
+// Heel Pivot
+// Natural Pivot Turn
+// Natural Turn
+// Progressive Chasse
+// Running Finish
+// Running Right Turn
+// Six Quick Run
+// Tipple Chasse To Right
+// V6
+// Zig-Zag, Back Lock And Running Finish
+
+// Following Figures
+// Closed Impetus
+// Tipple Chasse To Right
+// Natural Turn And Back Lock
+// Natural Pivot Turn
+// Natural Spin Turn
+// Natural Turn With Hesitation
+// Natural Turn
+// Cross Chasse
+// Forward Lock
+// Zig-Zag, Back Lock And Running Finish
+// Tipsy To R
+// Rumba Cross
