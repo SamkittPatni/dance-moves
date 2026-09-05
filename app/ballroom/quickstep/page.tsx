@@ -22,8 +22,6 @@ export default function QuickstepPage() {
     { name: "Closed Impetus", href:"/ballroom/quickstep/closed_impetus", category:"bronze", isRestricted: true },
     { name: "Backward Lock", href: "/ballroom/quickstep/backward_lock", category:"bronze", isRestricted: true },
     { name: "Reverse Pivot", href: "/ballroom/quickstep/reverse_pivot", category: "bronze", isRestricted: true },
-    { name: "Outside Change", href: "/ballroom/quickstep/outside_change", category: "bronze", isRestricted: true },
-    { name: "Reverse Corte", href: "/ballroom/quickstep/reverse_corte", category: "bronze", isRestricted: true },
     { name: "Progressive Chasse to Right", href: "/ballroom/quickstep/progressive_chasse_r", category: "bronze", isRestricted: true },
     { name: "Tipple Chasse", href: "/ballroom/quickstep/tipple_chasse", category: "bronze", isRestricted: true },
     { name: "Running Finish", href: "/ballroom/quickstep/running_finish", category: "bronze", isRestricted: true },
