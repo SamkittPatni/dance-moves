@@ -18,7 +18,7 @@ export default function PasoPage() {
     { name: "Deplacement (Attack)", href: "/latin/paso/deplacement", category: "prebronze", isRestricted: true },
     { name: "Promenade Link (also Promenade Close)", href: "/latin/paso/promenade_link", category: "prebronze", isRestricted: true },
     { name: "Promenade", href: "/latin/paso/promenade", category: "prebronze", isRestricted: true },
-    { name: "Ecart", href: "/latin/paso/ecart", category: "prebronze", isRestricted: true },
+    { name: "Ecart (Fallaway Whisk)", href: "/latin/paso/ecart", category: "prebronze", isRestricted: true },
     { name: "Separation", href: "/latin/paso/separation", category: "prebronze", isRestricted: true },
     { name: "Fallaway Ending to Separation", href: "/latin/paso/fallaway_ending_to_separation", category: "bronze", isRestricted: true },
     { name: "Huit", href: "/latin/paso/huit", category: "bronze", isRestricted: true },
