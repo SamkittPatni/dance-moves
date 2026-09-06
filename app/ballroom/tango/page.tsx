@@ -10,7 +10,6 @@ export default function TangoPage() {
   const [query, setQuery] = useState('');
 
   const steps: any[] = [
-    { name: "Walk", href: "/ballroom/tango/walk", category: "prebronze", isRestricted: true },
     { name: "Progressive Side Step", href: "/ballroom/tango/progressive_side_step", category: "prebronze", isRestricted: true },
     { name: "Progressive Link", href: "/ballroom/tango/progressive_link", category: "prebronze", isRestricted: true },
     { name: "Closed Promenade", href: "/ballroom/tango/closed_promenade", category: "prebronze", isRestricted: true },

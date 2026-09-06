@@ -4,29 +4,36 @@ import { Suspense } from "react";
 
 export default function Page() {
   const precedingFigures = [
-    { name: "Hover Telemark", href: "hover_telemark" },
-    { name: "Natural Turn", href: "natural_turn" },
-    { name: "Reverse Wave", href: "reverse_wave" },
+    { name: "Basic Reverse Turn", href: "basic_reverse_turn" },
+    { name: "Chase", href: "the_chase" },
+    { name: "Contra Check", href: "contra_check" },
+    { name: "Fallaway Four Step", href: "fallaway_fourstep" },
+    { name: "Five Step", href: "five_step" },
+    { name: "Four Step", href: "four_step" },
+    { name: "Natural Promenade Turn", href: "natural_promenade_turn" },
+    { name: "Natural Twist Turn", href: "natural_twist_turn" },
+    { name: "Open Finish", href: "open_and_closed_finish" },
+    { name: "Open Promenade", href: "open_promenade" },
+    { name: "Open Reverse Turn, Follower In Line", href: "open_reverse_turn_inside" },
+    { name: "Open Reverse Turn, Follower Outside", href: "open_reverse_turn_outside" },
+    { name: "Oversway", href: "oversway" },
+    { name: "Progressive Link", href: "progressive_link" },
+    { name: "Progressive Side Step Reverse Turn", href: "progressive_side_step_reverse_turn" },
   ];
 
   const followingFigures = [
-    { name: "Three Step", href: "three_step" },
-    { name: "Reverse Turn", href: "reverse_turn" },
-    { name: "Change Of Direction", href: "change_of_direction" },
-    { name: "Closed Telemark", href: "closed_telemark" },
-    { name: "Open Telemark and Feather Ending", href: "open_telemark_feather_ending" },
-    { name: "Open Telemark, Natural Turn, Outside Swivel and Feather Ending", href: "open_telemark_natural_turn_outside_swivel_feather_ending" },
-    { name: "Hover Telemark", href: "hover_telemark" },
-    { name: "Reverse Wave", href: "reverse_wave" },
-    { name: "Top Spin", href: "top_spin" },
-    { name: "Fallaway Reverse and Slip Pivot", href: "fallaway_reverse_slip_pivot" },
-    { name: "Bounce Fallaway with Weave Ending", href: "bounce_fallaway_weave_ending" },
+    { name: "Closed Promenade", href: "closed_promenade" },
+    { name: "Open Promenade", href: "open_promenade" },
+    { name: "Natural Twist Turn", href: "natural_twist_turn" },
+    { name: "Natural Promenade Turn", href: "natural_promenade_turn" },
+    { name: "Promenade Link", href: "promenade_link" },
+    { name: "Chase", href: "the_chase" },
   ];
 
   return (
     <>
       <div className="flex flex-col w-full h-full bg-black/75 text-justify md:px-10">
-        <h1 className="font-serif font-bold text-center">Hover Feather</h1>
+        <h1 className="font-serif font-bold text-center">Fallaway Promenade</h1>
         <hr className="mx-3 pb-5 border-gray-600" />
         <div className="px-3">
           {/* Closed Changes (also simply called a waltz basic) can start from both LF and RF.         */}
@@ -35,7 +42,7 @@ export default function Page() {
           <h2 className="font-bold text-2xl text-center pb-2">Video</h2>
           <hr className="mx-3 pb-5 border-gray-600" />
           <Suspense fallback={<p>Loading video...</p>}>
-            <VideoLink videoID="mjGifHdBSAs" start={0} end={-1} />
+            <VideoLink videoID="NfdwXOY34C8" start={0} end={-1} />
           </Suspense>
         </div>
         <div className="flex md:flex-row flex-col py-5">
@@ -54,3 +61,28 @@ export default function Page() {
     </>
   );
 }
+
+// Preceding Figures
+// Basic Reverse Turn
+// Chase
+// Contra Check
+// Fallaway Four Step
+// Five Step
+// Four Step
+// Natural Promenade Turn
+// Natural Twist Turn
+// Open Finish
+// Open Promenade
+// Open Reverse Turn, Follower In Line
+// Open Reverse Turn, Follower Outside
+// Oversway
+// Progressive Link
+// Progressive Side Step Reverse Turn
+
+// Following Figures
+// Closed Promenade
+// Open Promenade
+// Natural Twist Turn
+// Natural Promenade Turn
+// Promenade Link
+// Chase
