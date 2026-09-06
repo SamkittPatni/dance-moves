@@ -4,29 +4,39 @@ import { Suspense } from "react";
 
 export default function Page() {
   const precedingFigures = [
-    { name: "Hover Telemark", href: "hover_telemark" },
-    { name: "Natural Turn", href: "natural_turn" },
-    { name: "Reverse Wave", href: "reverse_wave" },
+    { name: "Alemana", href: "alemana" },
+    { name: "Continuous Hip Twists", href: "continuous_hip_twist" },
+    { name: "Hand To Hand", href: "hand_to_hand" },
+    { name: "Natural Top", href: "natural_top" },
+    { name: "Rope Spinning", href: "rope_spinning" },
+    { name: "Three Alemanas", href: "three_alemanas" },
   ];
 
   const followingFigures = [
-    { name: "Three Step", href: "three_step" },
-    { name: "Reverse Turn", href: "reverse_turn" },
-    { name: "Change Of Direction", href: "change_of_direction" },
-    { name: "Closed Telemark", href: "closed_telemark" },
-    { name: "Open Telemark and Feather Ending", href: "open_telemark_feather_ending" },
-    { name: "Open Telemark, Natural Turn, Outside Swivel and Feather Ending", href: "open_telemark_natural_turn_outside_swivel_feather_ending" },
-    { name: "Hover Telemark", href: "hover_telemark" },
-    { name: "Reverse Wave", href: "reverse_wave" },
-    { name: "Top Spin", href: "top_spin" },
-    { name: "Fallaway Reverse and Slip Pivot", href: "fallaway_reverse_slip_pivot" },
-    { name: "Bounce Fallaway with Weave Ending", href: "bounce_fallaway_weave_ending" },
+    { name: "Hand To Hand", href: "hand_to_hand" },
+    { name: "Basic Movements", href: "basic_movements" },
+    { name: "Fan", href: "fan" },
+    { name: "Opening Out To Right And Left", href: "opening_out_to_right_and_left" },
+    { name: "Side Step", href: "side_steps" },
+    { name: "Cuban Rock", href: "cuban_rocks" },
+    { name: "New York", href: "new_york" },
+    { name: "Spot Turn", href: "spot_turns" },
+    { name: "Underarm Turn", href: "spot_turns" },
+    { name: "Natural Opening Out Movement", href: "natural_opening_out_movement" },
+    { name: "Closed Hip Twist", href: "closed_hip_twist" },
+    { name: "Spiral", href: "spiral" },
+    { name: "Rope Spinning", href: "rope_spinning" },
+    { name: "Advanced Hip Twists", href: "advanced_hip_twist" },
+    { name: "Continuous Hip Twists", href: "continuous_hip_twist" },
+    { name: "Circular Hip Twists", href: "circular_hip_twist" },
+    { name: "Progressive Walks", href: "progressive_walks" },
+    { name: "Sliding Doors", href: "sliding_doors" },
   ];
 
   return (
     <>
       <div className="flex flex-col w-full h-full bg-black/75 text-justify md:px-10">
-        <h1 className="font-serif font-bold text-center">Hover Feather</h1>
+        <h1 className="font-serif font-bold text-center">Rope Spinning</h1>
         <hr className="mx-3 pb-5 border-gray-600" />
         <div className="px-3">
           {/* Closed Changes (also simply called a waltz basic) can start from both LF and RF.         */}
@@ -35,7 +45,7 @@ export default function Page() {
           <h2 className="font-bold text-2xl text-center pb-2">Video</h2>
           <hr className="mx-3 pb-5 border-gray-600" />
           <Suspense fallback={<p>Loading video...</p>}>
-            <VideoLink videoID="mjGifHdBSAs" start={0} end={-1} />
+            <VideoLink videoID="3Lwt_QdDznU" start={0} end={-1} />
           </Suspense>
         </div>
         <div className="flex md:flex-row flex-col py-5">
@@ -54,3 +64,31 @@ export default function Page() {
     </>
   );
 }
+
+// Preceding Figures
+// Alemana
+// Continuous Hip Twists
+// Hand To Hand
+// Natural Top
+// Rope Spinning
+// Three Alemanas
+
+// Following Figures
+// Hand To Hand
+// Basic Movements
+// Fan
+// Opening Out To Right And Left
+// Side Step
+// Cuban Rock
+// New York
+// Spot Turn
+// Underarm Turn
+// Natural Opening Out Movement
+// Closed Hip Twist
+// Spiral
+// Rope Spinning
+// Advanced Hip Twists
+// Continuous Hip Twists
+// Circular Hip Twists
+// Progressive Walks
+// Sliding Doors
