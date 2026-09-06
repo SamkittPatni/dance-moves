@@ -16,7 +16,7 @@ export default function ChaChaPage() {
     { name: "Shoulder to Shoulder", href: "/latin/chacha/shoulder_to_shoulder", category: "prebronze", isRestricted: true },
     { name: "Hand to Hand", href: "/latin/chacha/hand_to_hand", category:"prebronze", isRestricted: true },
     { name: "Three Cha Cha Chas", href: "/latin/chacha/three_cha_cha_cha", category:"prebronze", isRestricted: true },
-    { name: "Side Step", href: "/latin/chacha/side_step", category:"prebronze", isRestricted: true },
+    { name: "Side Step", href: "/latin/chacha/side_steps", category:"prebronze", isRestricted: true },
     { name: "There and Back", href: "/latin/chacha/there_and_back", category:"prebronze", isRestricted: true },
     { name: "Time Steps", href: "/latin/chacha/time_steps", category:"prebronze", isRestricted: true },
     { name: "Fan", href: "/latin/chacha/fan", category:"bronze", isRestricted: true },

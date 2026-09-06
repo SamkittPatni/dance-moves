@@ -39,7 +39,7 @@ export default function TopNav() {
     return (
       <>
         <div className="flex items-center">
-          <ChevronDoubleLeftIcon className="absolute w-6 h-6 left-5 transition-all duration-150 ease-in-out hover:scale-120" onClick={() => router.back()}>&lt;</ChevronDoubleLeftIcon>
+          <ChevronDoubleLeftIcon className="absolute w-6 h-6 left-5 transition-all duration-150 ease-in-out hover:scale-120 hover:cursor-pointer" onClick={() => router.back()}>&lt;</ChevronDoubleLeftIcon>
           <Link className="transition-all duration-150 ease-in-out hover:scale-110" href="/">Home</Link>
         </div>
       </>

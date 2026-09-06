@@ -4,30 +4,13 @@ import { Suspense } from "react";
 
 export default function Page() {
   const precedingFigures = [
-    { name: "Advanced Hip Twist", href: "advanced_hip_twist" },
-    { name: "Aida", href: "aida" },
-    { name: "Chase", href: "chase" },
-    { name: "Closed Hip Twist", href: "closed_hip_twist" },
-    { name: "Cross Basic", href: "cross_basic" },
-    { name: "Curl", href: "curl" },
-    { name: "Fan", href: "fan" },
-    { name: "Follow My Leader", href: "follow_my_leader" },
-    { name: "Hockey Stick", href: "hockey_stick" },
-    { name: "Open Basic Movement", href: "basic_movements" },
-    { name: "Open Hip Twist", href: "open_hip_twist" },
-    { name: "Opening Out From Reverse Top", href: "opening_out_from_reverse_top" },
-    { name: "Shoulder To Shoulder", href: "shoulder_to_shoulder" },
-    { name: "Spiral", href: "spiral" },
-    { name: "Spot Turn", href: "spot_turn" },
-    { name: "Sweetheart", href: "sweetheart" },
-    { name: "Three Cha Cha Chas Back", href: "three_cha_cha_cha" },
-    { name: "Three Cha Cha Chas Forward", href: "three_cha_cha_cha" },
-    { name: "Time Step", href: "time_steps" },
-    { name: "Turkish Towel", href: "turkish_towel" },
+    { name: "Alemana", href: "alemana" },
+    { name: "Hand To Hand", href: "hand_to_hand" },
+    { name: "Natural Top", href: "natural_top" },
+    { name: "Rope Spinning", href: "rope_spinning" },
   ];
 
   const followingFigures = [
-    { name: "Shoulder To Shoulder", href: "shoulder_to_shoulder" },
     { name: "Closed Basic Movement", href: "basic_movements" },
     { name: "Open Basic Movement", href: "basic_movements" },
     { name: "There And Back", href: "there_and_back" },
@@ -36,12 +19,12 @@ export default function Page() {
     { name: "Side Step", href: "side_steps" },
     { name: "Time Step", href: "time_steps" },
     { name: "Cross Basic", href: "cross_basic" },
+    { name: "Cuban Break", href: "cuban_breaks" },
+    { name: "Split Cuban Break", href: "cuban_breaks" },
     { name: "New York", href: "new_york" },
     { name: "Spot Turn", href: "spot_turn" },
     { name: "Underarm Turn", href: "spot_turn" },
     { name: "Three Cha Cha Chas Forward", href: "three_cha_cha_cha" },
-    { name: "Cuban Break", href: "cuban_breaks" },
-    { name: "Split Cuban Break", href: "cuban_breaks" },
     { name: "Natural Opening Out Movement", href: "natural_opening_out_movement" },
     { name: "Closed Hip Twist", href: "closed_hip_twist" },
     { name: "Spiral", href: "spiral" },
@@ -53,7 +36,7 @@ export default function Page() {
   return (
     <>
       <div className="flex flex-col w-full h-full bg-black/75 text-justify md:px-10">
-        <h1 className="font-serif font-bold text-center">Alemana</h1>
+        <h1 className="font-serif font-bold text-center">Rope Spinning</h1>
         <hr className="mx-3 pb-5 border-gray-600" />
         <div className="px-3">
           {/* Closed Changes (also simply called a waltz basic) can start from both LF and RF.         */}
@@ -62,7 +45,7 @@ export default function Page() {
           <h2 className="font-bold text-2xl text-center pb-2">Video</h2>
           <hr className="mx-3 pb-5 border-gray-600" />
           <Suspense fallback={<p>Loading video...</p>}>
-            <VideoLink videoID="GkeTjJo__Eo" start={16} end={38} />
+            <VideoLink videoID="RBBscXkSXrE" start={290} end={329} />
           </Suspense>
         </div>
         <div className="flex md:flex-row flex-col py-5">
@@ -83,29 +66,12 @@ export default function Page() {
 }
 
 // Preceding Figures
-// Advanced Hip Twist
-// Aida
-// Chase
-// Closed Hip Twist
-// Cross Basic
-// Curl
-// Fan
-// Follow My Leader
-// Hockey Stick
-// Open Basic Movement
-// Open Hip Twist
-// Opening Out From Reverse Top
-// Shoulder To Shoulder
-// Spiral
-// Spot Turn
-// Sweetheart
-// Three Cha Cha Chas Back
-// Three Cha Cha Chas Forward
-// Time Step
-// Turkish Towel
+// Alemana
+// Hand To Hand
+// Natural Top
+// Rope Spinning
 
 // Following Figures
-// Shoulder To Shoulder
 // Closed Basic Movement
 // Open Basic Movement
 // There And Back
@@ -114,12 +80,12 @@ export default function Page() {
 // Side Step
 // Time Step
 // Cross Basic
+// Cuban Break
+// Split Cuban Break
 // New York
 // Spot Turn
 // Underarm Turn
 // Three Cha Cha Chas Forward
-// Cuban Break
-// Split Cuban Break
 // Natural Opening Out Movement
 // Closed Hip Twist
 // Spiral

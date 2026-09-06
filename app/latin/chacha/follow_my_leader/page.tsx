@@ -4,29 +4,42 @@ import { Suspense } from "react";
 
 export default function Page() {
   const precedingFigures = [
-    { name: "Hover Telemark", href: "hover_telemark" },
-    { name: "Natural Turn", href: "natural_turn" },
-    { name: "Reverse Wave", href: "reverse_wave" },
+    { name: "Advanced Hip Twist", href: "advanced_hip_twist" },
+    { name: "Aida", href: "aida" },
+    { name: "Chase", href: "chase" },
+    { name: "Closed Hip Twist", href: "closed_hip_twist" },
+    { name: "Cuban Break", href: "cuban_breaks" },
+    { name: "Curl", href: "curl" },
+    { name: "Hockey Stick", href: "hockey_stick" },
+    { name: "Open Basic Movement", href: "basic_movements" },
+    { name: "Open Hip Twist", href: "open_hip_twist" },
+    { name: "Spiral", href: "spiral" },
+    { name: "Split Cuban Break", href: "cuban_breaks" },
+    { name: "Spot Turn", href: "spot_turn" },
+    { name: "Three Cha Cha Chas Forward", href: "three_cha_cha_cha" },
+    { name: "Time Step", href: "time_steps" },
+    { name: "Turkish Towel", href: "turkish_towel" },
   ];
 
   const followingFigures = [
-    { name: "Three Step", href: "three_step" },
-    { name: "Reverse Turn", href: "reverse_turn" },
-    { name: "Change Of Direction", href: "change_of_direction" },
-    { name: "Closed Telemark", href: "closed_telemark" },
-    { name: "Open Telemark and Feather Ending", href: "open_telemark_feather_ending" },
-    { name: "Open Telemark, Natural Turn, Outside Swivel and Feather Ending", href: "open_telemark_natural_turn_outside_swivel_feather_ending" },
-    { name: "Hover Telemark", href: "hover_telemark" },
-    { name: "Reverse Wave", href: "reverse_wave" },
-    { name: "Top Spin", href: "top_spin" },
-    { name: "Fallaway Reverse and Slip Pivot", href: "fallaway_reverse_slip_pivot" },
-    { name: "Bounce Fallaway with Weave Ending", href: "bounce_fallaway_weave_ending" },
+    { name: "Alemana", href: "alemana" },
+    { name: "Open Basic Movement", href: "basic_movements" },
+    { name: "Time Step", href: "time_steps" },
+    { name: "Open Hip Twist", href: "open_hip_twist" },
+    { name: "Curl", href: "curl" },
+    { name: "Cuban Break", href: "cuban_breaks" },
+    { name: "Split Cuban Break", href: "cuban_breaks" },
+    { name: "Chase", href: "chase" },
+    { name: "Turkish Towel", href: "turkish_towel" },
+    { name: "Advanced Hip Twist", href: "advanced_hip_twist" },
+    { name: "Hip Twist Spiral", href: "hip_twist_spiral" },
+    { name: "Sweetheart", href: "sweetheart" },
   ];
 
   return (
     <>
       <div className="flex flex-col w-full h-full bg-black/75 text-justify md:px-10">
-        <h1 className="font-serif font-bold text-center">Hover Feather</h1>
+        <h1 className="font-serif font-bold text-center">Follow My Leader</h1>
         <hr className="mx-3 pb-5 border-gray-600" />
         <div className="px-3">
           {/* Closed Changes (also simply called a waltz basic) can start from both LF and RF.         */}
@@ -35,7 +48,7 @@ export default function Page() {
           <h2 className="font-bold text-2xl text-center pb-2">Video</h2>
           <hr className="mx-3 pb-5 border-gray-600" />
           <Suspense fallback={<p>Loading video...</p>}>
-            <VideoLink videoID="mjGifHdBSAs" start={0} end={-1} />
+            <VideoLink videoID="_OSKTX1TN2c" start={190} end={219} />
           </Suspense>
         </div>
         <div className="flex md:flex-row flex-col py-5">
@@ -54,3 +67,34 @@ export default function Page() {
     </>
   );
 }
+
+// Preceding Figures
+// Advanced Hip Twist
+// Aida
+// Chase
+// Closed Hip Twist
+// Cuban Break
+// Curl
+// Hockey Stick
+// Open Basic Movement
+// Open Hip Twist
+// Spiral
+// Split Cuban Break
+// Spot Turn
+// Three Cha Cha Chas Forward
+// Time Step
+// Turkish Towel
+
+// Following Figures
+// Alemana
+// Open Basic Movement
+// Time Step
+// Open Hip Twist
+// Curl
+// Cuban Break
+// Split Cuban Break
+// Chase
+// Turkish Towel
+// Advanced Hip Twist
+// Hip Twist Spiral
+// Sweetheart
