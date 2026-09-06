@@ -4,29 +4,34 @@ import { Suspense } from "react";
 
 export default function Page() {
   const precedingFigures = [
-    { name: "Hover Telemark", href: "hover_telemark" },
-    { name: "Natural Turn", href: "natural_turn" },
-    { name: "Reverse Wave", href: "reverse_wave" },
+    { name: "Basic In Place", href: "basic_in_place" },
+    { name: "Fallaway Rock", href: "fallaway_rock" },
+    { name: "Link", href: "link" },
+    { name: "Mooch", href: "mooch" },
+    { name: "Reverse Whip", href: "reverse_whip" },
+    { name: "Stalking Walks, Flicks and Break", href: "stalking_walks_flicks_and_break" },
+    { name: "Toe Heel Swivels", href: "toe_heel_swivels" },
+    { name: "Walks", href: "promenade_walks" },
+    { name: "Whip", href: "whip" },
   ];
 
   const followingFigures = [
-    { name: "Three Step", href: "three_step" },
-    { name: "Reverse Turn", href: "reverse_turn" },
-    { name: "Change Of Direction", href: "change_of_direction" },
-    { name: "Closed Telemark", href: "closed_telemark" },
-    { name: "Open Telemark and Feather Ending", href: "open_telemark_feather_ending" },
-    { name: "Open Telemark, Natural Turn, Outside Swivel and Feather Ending", href: "open_telemark_natural_turn_outside_swivel_feather_ending" },
-    { name: "Hover Telemark", href: "hover_telemark" },
-    { name: "Reverse Wave", href: "reverse_wave" },
-    { name: "Top Spin", href: "top_spin" },
-    { name: "Fallaway Reverse and Slip Pivot", href: "fallaway_reverse_slip_pivot" },
-    { name: "Bounce Fallaway with Weave Ending", href: "bounce_fallaway_weave_ending" },
+    { name: "Chugging", href: "chugging" },
+    { name: "Link", href: "link" },
+    { name: "Change of Places Left to Right", href: "change_of_places_l_to_r" },
+    { name: "Change of Hands Behind Back", href: "change_of_hands_behind_back" },
+    { name: "Hip Bump", href: "hip_bump" },
+    { name: "American Spin", href: "american_spin" },
+    { name: "Stop and Go", href: "stop_and_go" },
+    { name: "Miami Special", href: "miami_special" },
+    { name: "Shoulder Spin", href: "shoulder_spin" },
+    { name: "Catapult", href: "catapult" },
   ];
 
   return (
     <>
       <div className="flex flex-col w-full h-full bg-black/75 text-justify md:px-10">
-        <h1 className="font-serif font-bold text-center">Hover Feather</h1>
+        <h1 className="font-serif font-bold text-center">Change of Places Right to Left with Double Spin</h1>
         <hr className="mx-3 pb-5 border-gray-600" />
         <div className="px-3">
           {/* Closed Changes (also simply called a waltz basic) can start from both LF and RF.         */}
@@ -35,7 +40,7 @@ export default function Page() {
           <h2 className="font-bold text-2xl text-center pb-2">Video</h2>
           <hr className="mx-3 pb-5 border-gray-600" />
           <Suspense fallback={<p>Loading video...</p>}>
-            <VideoLink videoID="mjGifHdBSAs" start={0} end={-1} />
+            <VideoLink videoID="NcE5hNdDKDU" start={0} end={-1} />
           </Suspense>
         </div>
         <div className="flex md:flex-row flex-col py-5">
@@ -54,3 +59,26 @@ export default function Page() {
     </>
   );
 }
+
+// Preceding Figures
+// Basic In Place
+// Fallaway Rock
+// Link
+// Mooch
+// Reverse Whip
+// Stalking Walks, Flicks and Break
+// Toe Heel Swivels
+// Walks
+// Whip
+
+// Following Figures
+// Chugging
+// Link
+// Change of Places Left to Right
+// Change of Hands Behind Back
+// Hip Bump
+// American Spin
+// Stop and Go
+// Miami Special
+// Shoulder Spin
+// Catapult

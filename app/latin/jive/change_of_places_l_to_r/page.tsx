@@ -4,29 +4,45 @@ import { Suspense } from "react";
 
 export default function Page() {
   const precedingFigures = [
-    { name: "Hover Telemark", href: "hover_telemark" },
-    { name: "Natural Turn", href: "natural_turn" },
-    { name: "Reverse Wave", href: "reverse_wave" },
+    { name: "American Spin", href: "american_spin" },
+    { name: "Catapult", href: "catapult" },
+    { name: "Change of Hands Behind Back", href: "change_of_hands_behind_back" },
+    { name: "Change of Places Right to Left", href: "change_of_places_r_to_l" },
+    { name: "Chugging", href: "chugging" },
+    { name: "Fallaway Throwaway", href: "fallaway_throwaway" },
+    { name: "Hip Bump", href: "hip_bump" },
+    { name: "Miami Special", href: "miami_special" },
+    { name: "Rolling Off the Arm", href: "rolling_off_the_arm" },
+    { name: "Shoulder Spin", href: "shoulder_spin" },
+    { name: "Simple Spin", href: "simple_spin" },
+    { name: "Spanish Arms", href: "spanish_arms" },
+    { name: "Stop and Go", href: "stop_and_go" },
+    { name: "Whip Throwaway", href: "whip_throwaway" },
+    { name: "Windmill", href: "windmill" },
   ];
 
   const followingFigures = [
-    { name: "Three Step", href: "three_step" },
-    { name: "Reverse Turn", href: "reverse_turn" },
-    { name: "Change Of Direction", href: "change_of_direction" },
-    { name: "Closed Telemark", href: "closed_telemark" },
-    { name: "Open Telemark and Feather Ending", href: "open_telemark_feather_ending" },
-    { name: "Open Telemark, Natural Turn, Outside Swivel and Feather Ending", href: "open_telemark_natural_turn_outside_swivel_feather_ending" },
-    { name: "Hover Telemark", href: "hover_telemark" },
-    { name: "Reverse Wave", href: "reverse_wave" },
-    { name: "Top Spin", href: "top_spin" },
-    { name: "Fallaway Reverse and Slip Pivot", href: "fallaway_reverse_slip_pivot" },
-    { name: "Bounce Fallaway with Weave Ending", href: "bounce_fallaway_weave_ending" },
+    { name: "Chugging", href: "chugging" },
+    { name: "Toe Heel Swivels", href: "toe_heel_swivels" },
+    { name: "Hip Bump", href: "hip_bump" },
+    { name: "Link", href: "link" },
+    { name: "Change of Hands Behind Back", href: "change_of_hands_behind_back" },
+    { name: "American Spin", href: "american_spin" },
+    { name: "Stop and Go", href: "stop_and_go" },
+    { name: "Windmill", href: "windmill" },
+    { name: "Spanish Arms", href: "spanish_arms" },
+    { name: "Rolling Off the Arm", href: "rolling_off_the_arm" },
+    { name: "Simple Spin", href: "simple_spin" },
+    { name: "Stalking Walks, Flicks and Break", href: "stalking_walks_flicks_and_break" },
+    { name: "Miami Special", href: "miami_special" },
+    { name: "Shoulder Spin", href: "shoulder_spin" },
+    { name: "Catapult", href: "catapult" },
   ];
 
   return (
     <>
       <div className="flex flex-col w-full h-full bg-black/75 text-justify md:px-10">
-        <h1 className="font-serif font-bold text-center">Hover Feather</h1>
+        <h1 className="font-serif font-bold text-center">Change of Places Left to Right</h1>
         <hr className="mx-3 pb-5 border-gray-600" />
         <div className="px-3">
           {/* Closed Changes (also simply called a waltz basic) can start from both LF and RF.         */}
@@ -35,7 +51,7 @@ export default function Page() {
           <h2 className="font-bold text-2xl text-center pb-2">Video</h2>
           <hr className="mx-3 pb-5 border-gray-600" />
           <Suspense fallback={<p>Loading video...</p>}>
-            <VideoLink videoID="mjGifHdBSAs" start={0} end={-1} />
+            <VideoLink videoID="QjEMUPwrOu4" start={346} end={381} />
           </Suspense>
         </div>
         <div className="flex md:flex-row flex-col py-5">
@@ -54,3 +70,37 @@ export default function Page() {
     </>
   );
 }
+
+// Preceding Figures
+// American Spin
+// Catapult
+// Change of Hands Behind Back
+// Change of Places Right to Left
+// Chugging
+// Fallaway Throwaway
+// Hip Bump
+// Miami Special
+// Rolling Off the Arm
+// Shoulder Spin
+// Simple Spin
+// Spanish Arms
+// Stop and Go
+// Whip Throwaway
+// Windmill
+
+// Following Figures
+// Chugging
+// Toe Heel Swivels
+// Hip Bump
+// Link
+// Change of Hands Behind Back
+// American Spin
+// Stop and Go
+// Windmill
+// Spanish Arms
+// Rolling Off the Arm
+// Simple Spin
+// Stalking Walks, Flicks and Break
+// Miami Special
+// Shoulder Spin
+// Catapult
