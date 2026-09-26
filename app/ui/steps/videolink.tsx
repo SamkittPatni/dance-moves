@@ -15,7 +15,7 @@ export default function VideoLink({videoID, start, end}: VidedoProps) {
             controls: 1,
             playsinline: 1,
             start: start,
-            ...(end !== undefined && { end: end, }),
+            // ...(end !== undefined && { end: end, }),
             rel: 0,
             fs: 1,
         }
@@ -35,7 +35,7 @@ export default function VideoLink({videoID, start, end}: VidedoProps) {
         event.target.cueVideoById({
             videoId: videoID,
             startSeconds: start,
-            ...(end !== undefined && { endSeconds: end, }),
+            // ...(end !== undefined && { endSeconds: end, }),
         });
     }
     return (
